@@ -61,6 +61,10 @@ public class Menu_principal extends javax.swing.JFrame {
         lbl_subtitulo = new javax.swing.JLabel();
         btn_reservar = new javax.swing.JButton();
         lbl_imagenhotel = new javax.swing.JLabel();
+        jMenuBar1 = new javax.swing.JMenuBar();
+        men_reservas = new javax.swing.JMenu();
+        mit_resv_salon = new javax.swing.JMenuItem();
+        mit_salir = new javax.swing.JMenuItem();
 
         diag_reservas.setTitle("BK Hoteles");
         diag_reservas.setBounds(new java.awt.Rectangle(600, 200, 0, 0));
@@ -126,7 +130,7 @@ public class Menu_principal extends javax.swing.JFrame {
                 .addGroup(jpan_datospersonalesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lbl_telefono)
                     .addComponent(txt_telefono, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(18, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         jpan_datosreserva.setBorder(javax.swing.BorderFactory.createTitledBorder("Datos de la reserva"));
@@ -282,29 +286,30 @@ public class Menu_principal extends javax.swing.JFrame {
                 .addGroup(jpan_reservasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jpan_reservasLayout.createSequentialGroup()
                         .addContainerGap()
-                        .addGroup(jpan_reservasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                            .addComponent(jpan_datospersonales, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jpan_datosreserva, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                        .addComponent(jpan_datospersonales, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jpan_reservasLayout.createSequentialGroup()
-                        .addGap(161, 161, 161)
+                        .addGap(157, 157, 157)
                         .addComponent(btn_reservar1)))
-                .addGap(0, 0, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(jpan_reservasLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(lbl_titulo1, javax.swing.GroupLayout.PREFERRED_SIZE, 389, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGroup(jpan_reservasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jpan_datosreserva, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lbl_titulo1, javax.swing.GroupLayout.PREFERRED_SIZE, 389, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         jpan_reservasLayout.setVerticalGroup(
             jpan_reservasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jpan_reservasLayout.createSequentialGroup()
-                .addGap(24, 24, 24)
+                .addGap(12, 12, 12)
                 .addComponent(lbl_titulo1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 27, Short.MAX_VALUE)
+                .addGap(18, 18, 18)
                 .addComponent(jpan_datospersonales, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jpan_datosreserva, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(btn_reservar1))
+                .addComponent(btn_reservar1)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout diag_reservasLayout = new javax.swing.GroupLayout(diag_reservas.getContentPane());
@@ -320,8 +325,8 @@ public class Menu_principal extends javax.swing.JFrame {
             diag_reservasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(diag_reservasLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jpan_reservas, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
+                .addComponent(jpan_reservas, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -350,6 +355,31 @@ public class Menu_principal extends javax.swing.JFrame {
 
         lbl_imagenhotel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/reservas/res/hotel.jpg"))); // NOI18N
         lbl_imagenhotel.setName("lbl_imagenhotel"); // NOI18N
+
+        men_reservas.setText("Reservas");
+        men_reservas.setName("men_reservas"); // NOI18N
+
+        mit_resv_salon.setText("Reservar Salón Habana");
+        mit_resv_salon.setName("mit_resv_salon"); // NOI18N
+        mit_resv_salon.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mit_resv_salonActionPerformed(evt);
+            }
+        });
+        men_reservas.add(mit_resv_salon);
+
+        mit_salir.setText("Salir");
+        mit_salir.setName("mit_salir"); // NOI18N
+        mit_salir.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mit_salirActionPerformed(evt);
+            }
+        });
+        men_reservas.add(mit_salir);
+
+        jMenuBar1.add(men_reservas);
+
+        setJMenuBar(jMenuBar1);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -382,7 +412,7 @@ public class Menu_principal extends javax.swing.JFrame {
                 .addComponent(btn_reservar)
                 .addGap(49, 49, 49)
                 .addComponent(lbl_imagenhotel, javax.swing.GroupLayout.PREFERRED_SIZE, 402, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(21, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         pack();
@@ -414,6 +444,18 @@ public class Menu_principal extends javax.swing.JFrame {
         // TODO add your handling code here:
         diag_reservas.dispose();
     }//GEN-LAST:event_btn_reservar1ActionPerformed
+
+    private void mit_resv_salonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mit_resv_salonActionPerformed
+        // TODO add your handling code here:
+        diag_reservas.setSize(450,600);
+        diag_reservas.setModal(true);
+        diag_reservas.setVisible(true);
+    }//GEN-LAST:event_mit_resv_salonActionPerformed
+
+    private void mit_salirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mit_salirActionPerformed
+        // TODO add your handling code here:
+        dispose();
+    }//GEN-LAST:event_mit_salirActionPerformed
 
     /**
      * @param args the command line arguments
@@ -456,6 +498,7 @@ public class Menu_principal extends javax.swing.JFrame {
     private javax.swing.JComboBox<String> cmb_tipococina;
     private javax.swing.JComboBox<String> cmb_tipoevento;
     private javax.swing.JDialog diag_reservas;
+    private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JPanel jpan_datospersonales;
     private javax.swing.JPanel jpan_datosreserva;
     private javax.swing.JPanel jpan_detallescongreso;
@@ -473,6 +516,9 @@ public class Menu_principal extends javax.swing.JFrame {
     private javax.swing.JLabel lbl_tipoevento;
     private javax.swing.JLabel lbl_titulo;
     private javax.swing.JLabel lbl_titulo1;
+    private javax.swing.JMenu men_reservas;
+    private javax.swing.JMenuItem mit_resv_salon;
+    private javax.swing.JMenuItem mit_salir;
     private javax.swing.JRadioButton rbtn_hab_no;
     private javax.swing.JRadioButton rbtn_hab_si;
     private javax.swing.JSpinner spn_fecha;
