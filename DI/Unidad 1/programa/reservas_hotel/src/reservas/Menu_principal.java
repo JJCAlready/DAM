@@ -154,6 +154,11 @@ public class Menu_principal extends javax.swing.JFrame {
                 cmb_tipoeventoItemStateChanged(evt);
             }
         });
+        cmb_tipoevento.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cmb_tipoeventoActionPerformed(evt);
+            }
+        });
 
         lbl_numasistentes.setText("Número de asistentes:");
         lbl_numasistentes.setName("lbl_numasistentes"); // NOI18N
@@ -432,12 +437,7 @@ public class Menu_principal extends javax.swing.JFrame {
 
     private void cmb_tipoeventoItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_cmb_tipoeventoItemStateChanged
         // TODO add your handling code here:
-        if("Congreso".equals(evt.getItem().toString())){
-            jpan_detallescongreso.setVisible(true);
-        }
-        else{
-            jpan_detallescongreso.setVisible(false);
-        }
+        jpan_detallescongreso.setVisible("Congreso".equals(evt.getItem().toString()));
     }//GEN-LAST:event_cmb_tipoeventoItemStateChanged
 
     private void btn_reservar1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_reservar1ActionPerformed
@@ -456,6 +456,10 @@ public class Menu_principal extends javax.swing.JFrame {
         // TODO add your handling code here:
         dispose();
     }//GEN-LAST:event_mit_salirActionPerformed
+
+    private void cmb_tipoeventoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmb_tipoeventoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_cmb_tipoeventoActionPerformed
 
     /**
      * @param args the command line arguments
