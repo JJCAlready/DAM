@@ -1,0 +1,27 @@
+Hola Jorge, 
+
+La práctica está muy bien, aun así te indico una serie de consideraciones sobre su contenido.
+
+Debido a que se trata de una aplicación no es un gran proyecto software y dado que, presumiblemente, no tendremos que hacer prototipado ni incrementos, el modelo más adecuado es el de Ciclo de Vida en Cascada Realimentado.
+
+En el Análisis se debe especificar (o es lo recomendable) los requisitos funcionales en términos de acciones, es decir, usar verbos para indicar qué debe hacer nuestro software,sistema, programa, aplicación, aplicativo, etc. Lo haces bien en la mayoría de los requisitos pero en los requisitos R1,R7 y R8 se podrían indicar de otra forma como "Controlar...", "Almacenar dolencias...", etc. 
+
+En cuanto al diseño, echo en falta un diagrama o un  desglose en bloques funcionales pero ser podría ser más específico. Por ejemplo: Getión de clientes,Gestión de productos, Facturación y Contabilidad. En Gestión de clientes: Alta de cliente, Baja de cliente, Gestión del monedero, etc.
+
+Esto a veces (y es recomendable) se hace de manera gráfica, en modo diagrama para que quede visualmente claro la jerarquía o dependencia de módulos funcionales.
+
+Por otro lado, en el diseño de datos faltaría tener datos para registrar qué producto se ha vendido a qué cliente, si esta venta ha sido con receta o no.
+
+Indicas bien qué lenguaje o lenguajes de programación se van a utilizar, pero no estaría mal decir qué versión de JKD o JRE.
+
+Teniendo en cuenta estas indicaciones, te propongo que repases tu tarea y hagas una segunda entrega si lo crees oportuno. 
+
+Determinar el ciclo de vida apropiado para su desarrollo y justificarlo: 1,5 punto (2 puntos).
+
+Realizar la fase de análisis: 2,75 puntos (3 puntos).
+
+Realizar la fase de diseño: 2,75 puntos  (3 puntos).
+
+Describir brevemente el resto de las fases del ciclo de vida indicando cual es el objetivo y cómo se podría alcanzar: 2 puntos (2 puntos).
+
+TOTAL:9 puntos
