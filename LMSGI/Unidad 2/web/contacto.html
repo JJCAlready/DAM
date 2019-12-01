@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CV Digital</title>
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header class="header">
+            <img src="img/encabezado.png">
+        </header>
+        <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse navbar-expand-md shadow">        
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="experiencia.html">Experiencia Profesional</a></li>
+                    <li class="nav-item"><a class="nav-link" href="info_academica.html">Formación</a></li>
+                    <li class="nav-item"><a class="nav-link" href="otros.html" id="last_nav_link">Sobre mi</a></li>
+                </ul>
+            </div>
+        </nav>
+        <section class="shadow">
+            <article class="inicio_art">
+                <form>
+                    <fieldset>
+                        <legend>Formulario de contacto</legend>
+                        <fieldset class="field">
+                            <legend class="contact">Datos de contacto</legend>
+                            <div class="cont-flex">
+                                <div>
+                                    <label for="cont_name">Nombre de contacto</label>
+                                    <input type="text" name="cont_name" placeholder=" introduce tu nombre" required/>
+                                </div>
+                                <div>
+                                    <label for="email">Correo Electrónico</label>
+                                    <input type="email" name="email" placeholder=" introduce tu email" required/>
+                                </div>
+                            </div>
+                            
+                        </fieldset>
+                        
+                        <div class="cont-flex">
+                            <fieldset class="mot_contact">
+                                <legend class="contact">Motivo del contacto</legend>
+                                <label>Profesional</label>
+                                <input type="radio" value="profesional" name="rbt_prof"/>
+                                <br/>
+                                <label>Personal</label>
+                                <input type="radio" value="personal" name="rbt_pers"/>
+                                <br/>
+                                <label>Informar de un error</label>
+                                <input type="radio" value="error" name="rbt_error"/>
+                                <br/>
+                            </fieldset>
+                            <fieldset class="mot_contact">
+                                <legend class="contact">Cómo llegaste aquí</legend>
+                                <select>
+                                    <option value="linkedin" name="LinkedIn">LinkedIn</option>
+                                    <option value="github" name="LinkedIn">GitHub</option>
+                                    <option value="atcontacto" name="atcontacto">A través de un contacto</option>
+                                </select>
+
+                            </fieldset>
+
+                            </div>
+                        <fieldset>
+                            <button type="reset">Limpiar</button>
+                            <button type="submit">Enviar</button>
+                        </fieldset>
+                    </fieldset>
+                    
+                </form>
+            </article>
+        </section>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    </body>
+</html>

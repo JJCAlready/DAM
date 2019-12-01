@@ -1,0 +1,118 @@
+.cont-flex{
+    display: flex;
+    margin-bottom: 10px;
+}
+.contact{
+    font-size: 19px;
+    font-weight: 500;
+    
+}.div-add{
+    margin: 10px 0 10px 0;
+    border: 1px solid lightgrey;
+    border-radius: 15px;
+    
+}
+
+.div-add > div{
+    width: 100%;
+    display: flex;
+    padding: 5px;
+    margin-left: 40%       
+}
+.div-add > h1{
+    text-align: center;
+}
+
+footer{
+    position: fixed;
+    bottom: 5%;
+    left: 5%;
+}
+
+header{
+    width: 100%;
+    margin: auto;
+    background-color: #0096d5;
+}
+
+img{
+    height: 100px;
+}
+
+.inicio_art{
+    background-color: #ceecee;
+    display: flex;
+    margin: auto;
+    height: 100%;
+}
+
+.inicio_art > * {
+    margin:auto;
+    padding: 80px 30px 80px 30px;
+    width: 500px;
+    border: 1px solid lightgrey;
+    border-radius: 15px;
+    vertical-align: middle;
+    text-align: center;
+    background-color: #adecee;
+}
+
+
+.leftpart {
+    width: 10%;
+    padding-left: 5px;
+    background-color: #ceecee;
+}
+
+.mot_contact{
+    width: 50%;
+}
+
+
+
+nav{
+    background-color: lightgrey;
+    
+}
+
+.puesto{
+    margin: 10px 0 10px 0;
+    border: 1px solid lightgrey;
+    border-radius: 15px;
+}
+
+.puesto > div{
+    width: 100%;
+    display: flex;
+    padding: 5px;
+    margin-left: 23%
+    
+}
+
+.puesto > h1{
+    text-align: center;
+}
+
+.rightpart {
+    width: 50%;
+    background-color: #83caf9;
+    padding-left: 5px;
+}
+.rightpart-add{
+    width: 10%;
+    background-color: #83caf9;
+    padding-left: 5px;
+
+}
+
+
+section{
+    margin: 30px;
+    height: 600px;
+    
+}
+section>article{
+    height: 100%;
+    margin: auto;
+    
+}
