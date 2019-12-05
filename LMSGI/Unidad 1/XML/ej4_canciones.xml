@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF8" standalone="yes"?>
+<musica>
+	<cancion duracion="4:47" anio="2008">
+		<titulo>Give it 2 me</titulo>
+		<compositores>
+			<compositor>
+				<nombre>Pharrell</nombre>
+				<apellidos>Williams</apellidos>
+			</compositor>
+		</compositores>
+		<productores>
+			<productor>
+				<nombre>Pharrell</nombre>
+				<apellidos>Williams</apellidos>
+			</productor>
+		</productores>
+		<sello>Warner Bros. Records</sello>
+		<artista>Madonna</artista>
+	</cancion>
+	<cancion duracion="5:23" anio="1990">
+		<titulo>Tornado of Souls</titulo>
+		<compositores>
+			<compositor>
+				<nombre>Dave</nombre>
+				<apellidos>Mustain</apellidos>
+			</compositor>
+			<compositor>
+				<nombre>David</nombre>
+				<apellidos>Ellefson</apellidos>
+			</compositor>
+		</compositores>
+		<productores>
+			<productor>
+				<nombre>Dave</nombre>
+				<apellidos>Mustain</apellidos>
+			</productor>
+			<productor>
+				<nombre>Mike</nombre>
+				<apellidos>Clink</apellidos>
+			</productor>
+		</productores>
+		<sello>Capitol Records</sello>
+		<artista>Megadeth</artista>
+	</cancion>
+</musica>

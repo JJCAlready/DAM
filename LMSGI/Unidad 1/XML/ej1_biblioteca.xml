@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<biblioteca>
+	<libro restringido="si">
+		<autor>Patrick Rothfuss</autor>
+		<titulo>Las puertas de piedra</titulo>
+		<fecha_pub>2020</fecha_pub>
+		<editorial>Plaza and Janés</editorial>
+	</libro>
+	<libro restringido="no">
+		<autor>Margaret Weiss</autor>
+		<autor>Tracy Hickman</autor>
+		<titulo>El retorno de los dragones</titulo>
+		<fecha_pub>1984</fecha_pub>
+		<editorial>Random House</editorial>
+	</libro>
+</biblioteca>

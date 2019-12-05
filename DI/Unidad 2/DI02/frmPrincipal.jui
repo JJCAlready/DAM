@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0" language="jambi">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>500</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="pushButton_Reservas">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>30</y>
+      <width>98</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&amp;Reservas</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_Salir">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>60</y>
+      <width>98</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&amp;Salir</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>10</y>
+      <width>341</width>
+      <height>231</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>recursos/hotel.jpg</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>500</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuAplicaci_n">
+    <property name="title">
+     <string>Aplicación</string>
+    </property>
+    <addaction name="actionReservas"/>
+   </widget>
+   <widget class="QMenu" name="menuGesti_n">
+    <property name="title">
+     <string>Gestión</string>
+    </property>
+    <addaction name="actionReservas_2"/>
+   </widget>
+   <addaction name="menuAplicaci_n"/>
+   <addaction name="menuGesti_n"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionReservas">
+   <property name="text">
+    <string>Salir</string>
+   </property>
+  </action>
+  <action name="actionReservas_2">
+   <property name="text">
+    <string>Reservas</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>pushButton_Salir</sender>
+   <signal>clicked&lt;java.lang.Boolean&gt;</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>430</x>
+     <y>107</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>428</x>
+     <y>135</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

@@ -1,0 +1,7 @@
+Hola Jorge
+
+En el ejercicio 1 los identificador $cantidad y númeroCuenta son validos pero por convenio no los debemos utilizar.
+
+En el ejercicio 2 la variable curso solo puede contener los valores DAM1, DAM2, DAW1, DAW2 para ello utilizaremos una enumeración.
+
+un saludo

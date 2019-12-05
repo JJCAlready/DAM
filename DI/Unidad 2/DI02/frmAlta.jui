@@ -1,0 +1,541 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0" language="jambi">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>679</width>
+    <height>592</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QWidget" name="">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>655</width>
+     <height>558</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="gridLayout_4">
+    <item row="0" column="0">
+     <widget class="QLabel" name="label">
+      <property name="font">
+       <font>
+        <pointsize>16</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+        <underline>true</underline>
+       </font>
+      </property>
+      <property name="text">
+       <string>Datos del cliente</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="0" column="0">
+       <widget class="QLabel" name="label_2">
+        <property name="text">
+         <string>&amp;DNI</string>
+        </property>
+        <property name="buddy">
+         <cstring>lineEdit_DNI</cstring>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1" colspan="2">
+       <widget class="QLineEdit" name="lineEdit_DNI">
+        <property name="toolTip">
+         <string>DNI del cliente</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="3">
+       <widget class="QLabel" name="label_5">
+        <property name="text">
+         <string>&amp;Nombre</string>
+        </property>
+        <property name="buddy">
+         <cstring>lineEdit_Nombre</cstring>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="4" colspan="3">
+       <widget class="QLineEdit" name="lineEdit_Nombre">
+        <property name="toolTip">
+         <string>Nombre del cliente.</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="label_3">
+        <property name="text">
+         <string>Di&amp;rección</string>
+        </property>
+        <property name="buddy">
+         <cstring>lineEdit_Direccion</cstring>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1" colspan="6">
+       <widget class="QLineEdit" name="lineEdit_Direccion">
+        <property name="toolTip">
+         <string>Dirección postal del cliente</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0" colspan="2">
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>com.trolltech.qt.core.Qt.Orientation.Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>148</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item row="2" column="2">
+       <widget class="QLabel" name="label_4">
+        <property name="text">
+         <string>&amp;Localidad</string>
+        </property>
+        <property name="buddy">
+         <cstring>lineEdit_Localidad</cstring>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="3" colspan="2">
+       <widget class="QLineEdit" name="lineEdit_Localidad">
+        <property name="toolTip">
+         <string>Localidad del cliente.</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="5">
+       <widget class="QLabel" name="label_6">
+        <property name="text">
+         <string>&amp;Provincia</string>
+        </property>
+        <property name="buddy">
+         <cstring>lineEdit_Provincia</cstring>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="6">
+       <widget class="QLineEdit" name="lineEdit_Provincia">
+        <property name="toolTip">
+         <string>Provincia del cliente.</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="2" column="0">
+     <widget class="QLabel" name="label_7">
+      <property name="font">
+       <font>
+        <pointsize>16</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+        <underline>true</underline>
+       </font>
+      </property>
+      <property name="text">
+       <string>Datos de la reserva</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="0">
+     <layout class="QGridLayout" name="gridLayout_2">
+      <item row="0" column="1">
+       <widget class="QLabel" name="label_9">
+        <property name="text">
+         <string>Fecha de salida</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QCalendarWidget" name="calendarWidget_Llegada">
+        <property name="toolTip">
+         <string>Fecha de llegada. Recordar que la entrada es a partir de las 12 del mediodia.</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QCalendarWidget" name="calendarWidget_Salida">
+        <property name="toolTip">
+         <string>Fecha de salida. la facturación debe realizarse antes de las 12 del mediodía.</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QLabel" name="label_8">
+        <property name="text">
+         <string>Fecha de llegada</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="4" column="0">
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QLabel" name="label_10">
+        <property name="text">
+         <string>Número de &amp;habitaciones</string>
+        </property>
+        <property name="buddy">
+         <cstring>spinBox_NHabitaciones</cstring>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QSpinBox" name="spinBox_NHabitaciones">
+        <property name="toolTip">
+         <string>Número de habitaciones que se quieren reservar.</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_11">
+        <property name="text">
+         <string>&amp;Tipo de habitación</string>
+        </property>
+        <property name="buddy">
+         <cstring>comboBox_Tipo</cstring>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="comboBox_Tipo">
+        <property name="toolTip">
+         <string>Tipo de habitación.</string>
+        </property>
+        <item>
+         <property name="text">
+          <string>Doble de uso individual</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Doble</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Junior Suite</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Junior</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="checkBox_Fumador">
+        <property name="toolTip">
+         <string>Recordar al cliente la prohibición de fumar en los espacios comunes del hotel.</string>
+        </property>
+        <property name="text">
+         <string>&amp;Fumador</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="5" column="0">
+     <layout class="QGridLayout" name="gridLayout_3">
+      <item row="0" column="0">
+       <widget class="QGroupBox" name="groupBox">
+        <property name="title">
+         <string>Reservas</string>
+        </property>
+        <widget class="QRadioButton" name="radioButton_AD">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>30</y>
+           <width>117</width>
+           <height>22</height>
+          </rect>
+         </property>
+         <property name="toolTip">
+          <string>Alojamiento y desayuno. </string>
+         </property>
+         <property name="text">
+          <string>AD</string>
+         </property>
+        </widget>
+        <widget class="QRadioButton" name="radioButton_MP">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>60</y>
+           <width>117</width>
+           <height>22</height>
+          </rect>
+         </property>
+         <property name="toolTip">
+          <string>Media pensión.</string>
+         </property>
+         <property name="text">
+          <string>MP</string>
+         </property>
+        </widget>
+        <widget class="QRadioButton" name="radioButton_PC">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>90</y>
+           <width>117</width>
+           <height>22</height>
+          </rect>
+         </property>
+         <property name="toolTip">
+          <string>Pensión completa.</string>
+         </property>
+         <property name="text">
+          <string>PC</string>
+         </property>
+        </widget>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <spacer name="verticalSpacer">
+        <property name="orientation">
+         <enum>com.trolltech.qt.core.Qt.Orientation.Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>118</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item row="0" column="2">
+       <widget class="QLabel" name="label_Norma">
+        <property name="text">
+         <string>En virtud de la ley de sanidad se informa a los clientes de que solo podrán fumar en las habitaciones reservadas para tal fin.</string>
+        </property>
+        <property name="wordWrap">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="6" column="0">
+     <layout class="QHBoxLayout" name="horizontalLayout_3">
+      <item>
+       <widget class="QPushButton" name="pushButton_Limpiar">
+        <property name="text">
+         <string>&amp;Limpiar</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_2">
+        <property name="orientation">
+         <enum>com.trolltech.qt.core.Qt.Orientation.Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>318</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QDialogButtonBox" name="buttonBox">
+        <property name="orientation">
+         <enum>com.trolltech.qt.core.Qt.Orientation.Horizontal</enum>
+        </property>
+        <property name="standardButtons">
+         <set>com.trolltech.qt.gui.QDialogButtonBox.StandardButton.Cancel|com.trolltech.qt.gui.QDialogButtonBox.StandardButton.Ok</set>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>lineEdit_DNI</tabstop>
+  <tabstop>lineEdit_Nombre</tabstop>
+  <tabstop>lineEdit_Direccion</tabstop>
+  <tabstop>lineEdit_Localidad</tabstop>
+  <tabstop>lineEdit_Provincia</tabstop>
+  <tabstop>calendarWidget_Llegada</tabstop>
+  <tabstop>calendarWidget_Salida</tabstop>
+  <tabstop>spinBox_NHabitaciones</tabstop>
+  <tabstop>comboBox_Tipo</tabstop>
+  <tabstop>checkBox_Fumador</tabstop>
+  <tabstop>radioButton_AD</tabstop>
+  <tabstop>radioButton_MP</tabstop>
+  <tabstop>radioButton_PC</tabstop>
+  <tabstop>pushButton_Limpiar</tabstop>
+  <tabstop>buttonBox</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted</signal>
+   <receiver>Dialog</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>467</x>
+     <y>545</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>304</x>
+     <y>537</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected</signal>
+   <receiver>Dialog</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>493</x>
+     <y>555</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>394</x>
+     <y>558</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_Limpiar</sender>
+   <signal>clicked&lt;java.lang.Boolean&gt;</signal>
+   <receiver>lineEdit_DNI</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>67</x>
+     <y>553</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>153</x>
+     <y>60</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_Limpiar</sender>
+   <signal>clicked&lt;java.lang.Boolean&gt;</signal>
+   <receiver>lineEdit_Nombre</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>74</x>
+     <y>548</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>396</x>
+     <y>56</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_Limpiar</sender>
+   <signal>clicked&lt;java.lang.Boolean&gt;</signal>
+   <receiver>lineEdit_Direccion</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>39</x>
+     <y>555</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>189</x>
+     <y>91</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_Limpiar</sender>
+   <signal>clicked&lt;java.lang.Boolean&gt;</signal>
+   <receiver>lineEdit_Localidad</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>59</x>
+     <y>561</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>284</x>
+     <y>124</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_Limpiar</sender>
+   <signal>clicked&lt;java.lang.Boolean&gt;</signal>
+   <receiver>lineEdit_Provincia</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>96</x>
+     <y>539</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>516</x>
+     <y>121</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_Limpiar</sender>
+   <signal>clicked&lt;java.lang.Boolean&gt;</signal>
+   <receiver>spinBox_NHabitaciones</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>28</x>
+     <y>558</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>203</x>
+     <y>392</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_Limpiar</sender>
+   <signal>clicked&lt;java.lang.Boolean&gt;</signal>
+   <receiver>comboBox_Tipo</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>76</x>
+     <y>560</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>397</x>
+     <y>391</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

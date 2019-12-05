@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF8" standalone="yes"?>
+<cultura>
+	<museo nombre="Museo Nacional del Prado">
+		<ciudad>Madrid</ciudad>
+		<direccion>Calle de Ruiz de Alarcon, 23, 28014 Madrid</direccion>
+		<met_cuadr>	41995</met_cuadr>
+		<obras>
+			<cuadro codigo="P000015">
+				<nombre>La Anunciación</nombre>
+				<autor>
+					<nombre>Fra Angélico</autor>
+					<pais>Italia</pais>
+					<fecha_nac>1395</fecha_nac>
+					<fecha_def>1455</fecha_def>
+				</autor>
+				<dimensiones medida="cm">
+					<alto>190.3</alto>
+					<ancho>191.5</ancho>
+				</dimensiones>
+				<fecha_pint>1426</fecha_pint>
+				<tecnica>Tempera</tecnica>
+			</cuadro>
+			<cuadro codigo="P000809">
+				<nombre>El caballero de la mano en el pecho</nombre>
+				<autor>
+					<nombre>El Greco</autor>
+					<pais>Creta</pais>
+					<fecha_nac>1541</fecha_nac>
+					<fecha_def>1614</fecha_def>
+				</autor>
+				<dimensiones medida="cm">
+					<alto>81,8</alto>
+					<ancho>66,1</ancho>
+				</dimensiones>
+				<fecha_pint>1580</fecha_pint>
+				<tecnica>Óleo</tecnica>
+			</cuadro>
+		</obras>
+	</museo>
+</cultura>
