@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Tabla prestamos -->
+<prestamos>
+
+<entrada>
+<titulo>XML Imprescindible</titulo>
+<prestamo>
+<inicio>2011-05-02</inicio>
+<lector>
+<nombre>Pepito</nombre>
+<apellidos>Grillo</apellidos>
+<direccion>Rue Percebe, 13</direccion>
+<telefono>972987654</telefono>
+</lector>
+</prestamo>
+</entrada>
+
+<entrada>
+<titulo>XML Imprescindible</titulo>
+<prestamo>
+<inicio>2011-02-12</inicio>
+<devolucion>2011-02-16</devolucion>
+<lector>
+<nombre>Jose</nombre>
+<apellidos>Gutiérrez González</apellidos>
+<direccion>Rue Percebe, 13</direccion>
+<telefono>919485432</telefono>
+</lector>
+</prestamo>
+</entrada>
+
+<entrada>
+<titulo>XPath Essentials</titulo>
+<prestamo>
+<inicio>2011-02-23</inicio>
+<devolucion>2011-03-10</devolucion>
+<lector>
+<nombre>Pepito</nombre>
+<apellidos>Grillo</apellidos>
+<direccion>Rue Percebe, 13</direccion>
+<telefono>972987654</telefono>
+</lector>
+</prestamo>
+</entrada>
+</prestamos>
