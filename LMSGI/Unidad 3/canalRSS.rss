@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" >
+
+ <!-- Primero define el canal -->
+
+<channel>
+  <title>Canal RSS de Pruebas</title>
+  <link>http://www.urlinventada.com</link>
+  <description>Este es un canal de prueba construido para que conozcais la estructura de un documento según la versión RSS 2.0</description>
+  <lastBuildDate>Fri, 20 Jul 2018 12:10:12 +0200</lastBuildDate>
+  <language>es-es</language>
+  
+  <!-- Después se repiten los items correspondientes a las novedades que haya -->
+
+<item>
+<title>Titular de la noticia 01 </title>
+<link>http://www.urlinventada.com/noticia01</link>
+<description>Aquí habría una descripción de lo que aporta la noticia 01. Es lo que se ve en el agregador</description>
+<author>pedropicapiedra@example.com (Pedro Picapiedra) </author>
+<pubDate>Fri, 20 Jul 2018 12:10:12 +0200</pubDate>
+</item>
+
+<item>
+<title>Titular de la noticia 02 </title>
+<link>http://www.urlinventada.com/noticia02</link>
+<description>Aquí habría una descripción de lo que aporta la noticia 02. Es lo que se ve en el agregador</description>
+<author>pablomarmol@example.com (Pablo Marmol)</author>
+<pubDate>Fri, 20 Jul 2018 12:10:12 +0200</pubDate>
+</item>
+
+</channel>
+</rss>

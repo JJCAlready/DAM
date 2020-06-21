@@ -1,0 +1,34 @@
+Alumno: Jorge Custodio Calle
+
+Ejercicio 1:
+Para este ejercicio he elegido un do while, para que entre al menos una vez, recojo la entrada de teclado, y compruebo que no sea N; en caso de que sea, interrumpo el bucle y salgo. En caso de que sea un número compruebo si es par o impar, recojo las excepciones de entrada de teclado y formato de número.
+
+
+
+Ejercicio 2:
+Para este ejercicio recojo la entrada de teclado, y después con dos for anidados procedo a imprimir por pantalla el cuadrado. Recojo las excepciones de entrada de teclado y formato de número.
+
+
+
+Ejercicio 3:
+Para este ejercicio he creado un método que es el que recoge un entero y me devuleve su correspondiente en texto.
+
+Primero recojo la nota por entrada de teclado, después separo en entero y decimal, y por último construyo la salida.
+
+Recojo las excepciones de entrada de teclado y formato de número, también las del formato para el parseo, y las de fuera de indice para comprobar que sea un entero con un decimal.
+
+
+Ejercicio 4:
+Para este ejercicio creo la clase coche, con sus getters, sus setters, y sus constructores, así como el toString, modificado para que sea más legible.
+Creo el objeto coche y le asigno null, para posteriores comprobaciones.
+
+Utilizo un do while para que muestre al menos una vez el menú, y controlo el bucle con la opcion elegida.
+
+Recojo las excepciones de entrada de teclado y de formato de número.
+
+Después utilizo un switch para la opcion seleccionada:
+- 1. creo un nuevo coche con los valores indicados en el ejercicio.
+- 2. compruebo que existe el coche, y si existe pregunto el color
+- 3. compruebo que existe el coche, y si existe muestro la información con el toString
+
+No uso el 4, porque me sirve para salir del bucle

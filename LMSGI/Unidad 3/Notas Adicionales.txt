@@ -1,0 +1,16 @@
+Feedly tiene una funcionalidad para integrar twitter, según la cual puedes tener actualizaciones según:
+- Cuenta
+- Hashtag
+- Una búsqueda
+- Una lista
+
+Se puede hacer filtro de palabras, de temas, solo enlaces... 
+Aquí la documentación de Feedly:
+
+https://blog.feedly.com/twitter-feeds/
+
+
+Del mismo modo, se puede integrar instagram con feedly, aunque este funciona mediante triggers que disparan acciones en tu feedly.
+Aquí la documentación:
+
+https://zapier.com/apps/instagram/integrations/feedly

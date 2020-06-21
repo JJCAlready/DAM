@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE person SYSTEM "person.dtd">
+<person>
+  <name>
+    <first_name>Paco</first_name>
+    <last_name>Mer</last_name>
+  </name>
+  <profesion>Cocinero</profesion>
+</person>

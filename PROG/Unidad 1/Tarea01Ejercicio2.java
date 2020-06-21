@@ -15,3 +15,4 @@ class Tarea01Ejercicio2 {
 		System.out.println("Salamanca, Salamanca");
 	}
 }
+

@@ -1,0 +1,15 @@
+Alumno: Jorge Custodio Calle
+
+Para el ejercicio 1:
+He creado la clase Movil, y he creado las variables solicitadas.
+
+Para el ejercicio 2:
+He creado los métodos solicitados, modificando el toString para que tuviera una salida más legible.
+
+Para el ejericio 3:
+He creado las clases con los métodos solicitados, modificando el toString para que tuviera una salida más legible.
+
+Para el ejericico 4:
+Por la salida de consola he creado una pequeña interfaz para solicitar y recoger los datos y parsearlos.
+Una vez recogidos los datos, he creado los objetos intermedios, y con todos estos datos he creado el objeto final movil1.
+Después de esto, por la salida de consola, muestro toda la información mediante el método toString.

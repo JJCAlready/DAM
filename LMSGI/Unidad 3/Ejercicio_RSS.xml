@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" >
+
+ <!-- Primero define el canal -->
+
+<channel>
+  <title>Xataka</title>
+  <link>https://www.xataka.com/</link>
+  <description>Xataka, novedades sobre tecnología</description>
+  <lastBuildDate>Mon, 15 Jun 2020 17:10:12 +0200</lastBuildDate>
+  <language>es-es</language>
+  
+  <!-- Después se repiten los items correspondientes a las novedades que haya -->
+
+  <item>
+  <title>Con sólo analizar las vibraciones de una bombilla es posible escuchar conversaciones a decenas de metros de distancia </title>
+  <link>https://www.xataka.com/seguridad/solo-analizar-vibraciones-bombilla-posible-escuchar-conversaciones-a-decenas-metros-distancia</link>
+  <description>Con sólo analizar las vibraciones de una bombilla es posible escuchar conversaciones a decenas de metros de distancia </description>
+  <author>cristianrus4@gmail.com (Christian Rus) </author>
+  <pubDate>Mon, 15 Jun 2020 17:10:12 +0200</pubDate>
+  </item>
+
+  <item>
+  <title>En Sony no descartan una versión negra de la PS5 y aseguran que habrá cambios en su interfaz de usuario </title>
+  <link>https://www.xataka.com/videojuegos/sony-no-descartan-version-negra-ps5-aseguran-que-habra-cambios-su-interfaz-usuario</link>
+  <description>En Sony no descartan una versión negra de la PS5 y aseguran que habrá cambios en su interfaz de usuario </description>
+  <author>javierpastor@gmail.com (Javier Pastor) </author>
+  <pubDate>Mon, 15 Jun 2020 12:23:12 +0200</pubDate>
+  </item>
+
+</channel>
+
+</rss>
