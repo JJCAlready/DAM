@@ -1,0 +1,35 @@
+package cap6_7_2;
+	import java.io.File;
+	import java.io.FilenameFilter;
+
+	public class Filtro implements FilenameFilter {
+	    String extension;
+	    Filtro(String extension){
+	        this.extension=extension;
+	    }
+	    public boolean accept(File dir, String name){
+	        return name.endsWith(extension);
+	    }
+
+	    public static void main(String[] args) {
+	        try {
+	            File fichero=new File("c:\\Users\\USUARIO\\Documents\\.");
+	            String[] listadeArchivos = fichero.list();
+	            listadeArchivos = fichero.list(new Filtro(".pdf"));
+	            int numarchivos = listadeArchivos.length ;
+
+	            if (numarchivos < 1)
+	                System.out.println("No hay archivos que listar");
+	            else
+	            {
+	                for(int conta = 0; conta < listadeArchivos.length; conta++)
+	                    System.out.println(listadeArchivos[conta]);
+	            }
+	        }
+	        catch (Exception ex) {
+	            System.out.println("Error al buscar en la ruta indicada");
+	        }
+	    }
+	}
+
+

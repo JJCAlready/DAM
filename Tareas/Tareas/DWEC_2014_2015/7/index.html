@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tarea 7 - DWEC</title>
+        <meta charset="UTF-8">      
+        <script type="text/javascript" src="jquery-1.11.2.min.js"></script>
+        <script type="text/javascript" src="index.js"></script> 
+        <link rel="stylesheet" href="estilos.css">   
+    </head>
+    <body>
+        <header>
+            <h1>Tarea 7-DWEC</h1>
+            <h4> Fernando Arnedo Ayensa</h4>
+            <div id='idioma'>
+                <img src='es.png' id='es' title='es' alt="imagen idioma español"></img>
+                <img src='uk.png' id='en' title='en' alt="imagen idioma inglés"></img>
+                <img src='fr.png' id='fr' title='fr' alt="imagen idioma francés"></img>
+            </div>
+        </header>
+        <div class='contenedor_formulario'>
+            <div class='formulario'>
+                <form id='formulario'> 
+                    <br> 
+                    <label for="localidad" id='labelLocalidad'>Localidad:</label>
+                    <input type="text" id="localidad" name="localidad"/>                                      
+                    <div class='botonera'>
+                        <input type="button" id="actual" name="actual" value="Tiempo actual" />
+                        <input type="button" id="manyana" name="manyana" value="Tiempo mañana" />
+                    </div>
+                </form>
+            </div> 
+        </div>
+        <div id='precarga_ajax'>
+            <img src="ajax-loader.gif" alt="Precarga ajax">
+        </div>
+        <div id='tiempo_actual' >
+        </div>
+        <div id='tiempo_manyana' >
+        </div>
+        <div id='prb'></div>
+    </body>
+</html>	

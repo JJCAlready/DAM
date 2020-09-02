@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Tarea 5 - DWEC</title>
+        <meta charset="UTF-8">
+        <script type="text/javascript" src="preguntas.js"></script>
+        <link rel="stylesheet" href="estilos.css">   
+    </head>
+    <body>
+        <header>
+            <h1>Tarea 5 - DWEC</h1>
+            <h4>Fernando Arnedo Ayensa</h4>
+        </header>
+        
+        <div class='contenedor_formulario'>
+            <h1>Travial</h1>
+            <div class='formulario'>
+                <form id='formulario'>  
+                    <span class='titulo_formulario'>Añada la pregunta</span>                  
+                    <br>         
+                    <label for="categoria">Categoría:</label>
+                    <select name="categoria" id="categoria">
+                      <option value="Geografía">Geografía</option>
+                      <option value="Historia">Historia</option>
+                      <option value="Espectáculos">Espectáculos</option>
+                      <option value="Ciencia y Tecnología">Ciencia y Tecnología</option>
+                      <option value="Espectáculos">Espectáculos</option>
+                      <option value="Miscelánea">Miscelánea</option>
+                      <option value="Cultura">Cultura</option>
+                      <option value="Deportes">Deportes</option>
+                    </select>
+                    <br>                    
+                    <label for="texto_pregunta">Texto de la pregunta:</label>
+                    <textarea id="texto_pregunta" name="texto_pregunta" rows="6" cols="21">
+                    </textarea>
+                    <br>
+                    <label for="resp1">Respuesta 1:</label>
+                    <input type="text" id="resp1" name="resp1"/>
+                    <input type="radio" name="resp_ok" value="1" selected>
+                    <br>
+                    <label for="resp2">Respuesta 2:</label>
+                    <input type="text" id="resp2" name="resp2"/>
+                    <input type="radio" name="resp_ok" value="2">
+                    <br>
+                    <label for="resp3">Respuesta 3:</label>
+                    <input type="text" id="resp3" name="resp3"/>
+                    <input type="radio" name="resp_ok" value="3"> 
+                    <br>
+                    <label for="resp4">Respuesta 4:</label>
+                    <input type="text" id="resp4" name="resp4"/>
+                    <input type="radio" name="resp_ok" value="4">
+                    <div class='botonera'>
+                        <input type="submit" id="enviar" name="enviar" value="Enviar" />
+                        <input type="reset" id="reset" name="reset" value="Borrar" />
+                    </div>
+                    <div id='errores' class='error'>
+                    </div>
+                </form>
+                
+                <div class='error'>
+                </div>        
+            </div> 
+        </div> 
+    </body>
+</html>

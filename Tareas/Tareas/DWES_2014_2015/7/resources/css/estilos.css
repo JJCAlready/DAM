@@ -1,0 +1,153 @@
+* { 
+	margin: 0px;
+	padding: 0px; outline: 0;
+}
+
+html, body { 
+	width: 100%;
+}
+
+body { 
+	background: #FFFFFF;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+h1 {
+	font-size: 1.5em;
+}
+
+h4 {
+	font-size: 0.95em;
+}
+
+h1, h3, h4 {
+    text-align: left;
+    margin-left: 20px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+caption {	
+	color: #000;
+	padding: 20px;
+}
+
+select {
+	width: 280px;
+}
+
+
+ table {
+	display: table;
+	border-collapse: collapse;
+	border-spacing: 0px;
+	border-color: #000;
+	margin: 20px auto 0 auto;
+}
+
+td {
+	border: 1px solid #000;
+	padding: 6px;
+	margin: 6px;
+	font-size: 0.8em;
+}
+
+th {
+	background: #555;
+	color: #fff;
+	padding: 6px;
+	margin: 6px;
+	font-size: 0.8em;
+	border-left: 1px solid #555;
+	border-top:  1px solid #555;
+	border-right: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+}
+
+
+tr > th:last-child {
+	border-right:  1px solid #555;
+}
+
+label {
+    width: 190px;
+    text-align: right;
+    float: left;
+}
+
+.contenedor_listado,
+.contenedor_formulario {
+    margin: 80px auto 0px auto;
+    width: 900px;
+    height: auto;
+}
+
+.formulario {
+    margin: 0px auto;
+    width: 450px;
+    height: auto;
+    font-size: 0.9em;
+    text-align: center;
+    border: 1px solid black;
+}
+
+.formulario .botonera {
+    margin-top: 100px;
+}
+
+.formulario input[type='text'] {
+    margin-left: 10px;
+    margin-bottom: 10px;
+    text-align: left;
+	float:left;
+}
+
+
+.formulario input[type='button'] {
+    margin: 10px 10px 20px 10px;
+    text-align: center;
+    width: 90px;
+}
+
+.formulario span {
+    width: 210px;
+    text-align: right;
+    float: left;
+}
+
+.formulario span.titulo_formulario {
+    width: 430px;
+    text-align: left;
+    background: #A0A0A0;
+    font-weight: 700;
+    padding: 4px 10px;
+    margin-bottom: 20px;        
+}
+
+.error {
+	font-weight: 700;
+    font-size: 0.7em;
+    text-align: left;
+    padding: 20px;
+    color: #FE2E2E;
+}
+
+.centrado {
+    text-align: center;
+}
+
+.botonera {
+	width : 100%;
+}
+
+#formComercial {
+    display: none;
+}
+
+#nuevo_comercial {
+    margin-right: 520px;
+}
+
+caption {
+    margin-top: -50px;
+}

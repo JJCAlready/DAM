@@ -1,0 +1,147 @@
+* { 
+	margin: 0px;
+	padding: 0px; outline: 0;
+}
+
+html, body { 
+	width: 100%;
+}
+
+body { 
+	background: #FFFFFF;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+h1 {
+	font-size: 1.5em;
+}
+
+h4 {
+	font-size: 0.95em;
+}
+
+h1, h3, h4 {
+    text-align: left;
+    margin-left: 20px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+caption {	
+	color: #000;
+	padding: 20px;
+}
+
+
+td {
+    border: 1px solid #000;
+    padding: 6px;
+    margin: 6px;
+    font-size: 0.8em;
+}
+
+th {
+    background: #555;
+    color: #fff;
+    padding: 6px;
+    margin: 6px;
+    font-size: 0.8em;
+    border-left: 1px solid #555;
+    border-top:  1px solid #555;
+    border-right: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+}
+
+
+tr > th:last-child {
+    border-right:  1px solid #555;
+}
+
+table {
+    display: table;
+    border-collapse: collapse;
+    border-spacing: 0px;
+    border-color: #000;
+    margin: 0px auto 0 auto;
+}
+
+.contenido {
+    overflow: hidden;
+    font-size: 0.8em;
+    margin: 10px auto 0px auto;
+    width: 1020px;
+    height: auto;
+}
+
+.contenedor_formulario {
+    margin: 20px auto 0px auto;
+    width: 220px;
+    height: auto;
+}
+
+.izq {
+    margin: 15px 10px 15px 10px;
+    width: 340px;
+    float:left;
+}
+
+.dcha {
+    margin: 15px 10px 15px 10px;
+    width: 640px;
+    float:right;
+}
+
+
+
+
+.formulario {
+    margin: 0px auto;
+    width: 200px;
+    height: auto;
+    font-size: 0.9em;
+    text-align: center;
+    border: 1px solid black;
+    background-color: #f0f0f0;
+}
+
+
+input[type='text'] {
+    text-align: left;
+    width: 80px;
+}
+
+.formulario input[type='submit'] {
+    text-align: center;
+    width: 80px;
+}
+
+.formulario span {
+    width: 180px;
+    text-align: right;
+    float: left;
+}
+
+.formulario span.titulo_formulario {
+    width: 180px;
+    text-align: left;
+    background: #A0A0A0;
+    font-weight: 700;
+    padding: 4px 0px 4px 20px;
+    margin-bottom: 20px;        
+}
+
+
+.centrado {
+    text-align: center;
+}
+
+.visible {
+    display: inline;
+}
+
+.oculto {
+    display: none;
+}
+
+
+

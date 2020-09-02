@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="344.0" prefWidth="313.0" xmlns:fx="http://javafx.com/fxml" fx:controller="gestionpacientes.FXMLDocumentController">
+  <children>
+    <Label fx:id="label" layoutX="126.0" layoutY="120.0" minHeight="16.0" minWidth="69.0" />
+    <Label id="label" layoutX="125.0" layoutY="141.0" minHeight="16.0" minWidth="69.0" />
+    <Label layoutX="23.0" layoutY="35.0" text="Pacientes">
+      <font>
+        <Font size="20.0" />
+      </font>
+    </Label>
+    <Separator layoutX="23.0" layoutY="67.0" prefWidth="264.0" />
+    <Label id="lbl_nif" layoutX="94.0" layoutY="82.0" text="Nif:" />
+    <TextField fx:id="txt_nif" layoutX="125.0" layoutY="76.0" prefWidth="84.0" />
+    <Label id="lbl_nif" layoutX="70.0" layoutY="112.0" text="Nombre:" />
+    <TextField fx:id="txt_nombre" layoutX="125.0" layoutY="108.0" prefWidth="84.0" />
+    <Label id="lbl_nif" layoutX="65.0" layoutY="138.0" text="Apellidos:" />
+    <TextField fx:id="txt_apellidos" layoutX="125.0" layoutY="132.0" prefWidth="84.0" />
+    <Label id="lbl_nif" layoutX="48.0" layoutY="161.0" text="Enfermedad:" />
+    <TextField fx:id="txt_enfermedad" layoutX="125.0" layoutY="155.0" prefWidth="84.0" />
+    <Separator layoutX="23.0" layoutY="210.0" prefWidth="264.0" />
+    <TextArea fx:id="txta_mostrar" layoutX="25.0" layoutY="224.0" prefHeight="85.0" prefWidth="209.0" wrapText="true" />
+    <Button fx:id="btn_nuevo" layoutX="236.0" layoutY="80.0" mnemonicParsing="false" text="Nuevo" />
+    <Button fx:id="btn_mostrar" layoutX="236.0" layoutY="224.0" mnemonicParsing="false" text="Mostrar" />
+  </children>
+</AnchorPane>

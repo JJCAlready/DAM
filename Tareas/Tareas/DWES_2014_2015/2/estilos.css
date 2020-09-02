@@ -1,0 +1,137 @@
+body {
+    font-size: 100%;
+    background: #f6f6fa;
+}
+
+h1, h3 {
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+
+/*
+    evitando estar muy pegado a la cabecera
+ */
+body form {
+    margin-top: 60px;
+}
+
+/*
+    Centraremos el contenido
+ */
+#contenedor_listado, 
+#contenedor_formulario {
+    margin: 0 auto 0 auto;
+    width: 700px;
+    height: auto;
+}
+
+.listado {
+    margin: 0 auto 0 auto;
+    width: auto;
+    height: auto; 
+}
+
+/*
+    Situaremos el menú en la esquina superior izquierda de la página
+ */
+#contenedor_menu {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 120px;
+    font-size: 1em;
+}
+
+.menu {
+    width: auto;
+    height: auto;
+    box-shadow: 0px 1px 3px 0px rgba(0,0,0,.73), 0px 0px 18px 0px rgba(0,0,0,.13);
+
+}
+
+/*
+    Formato exclusivo para los botones del menú
+ */
+.menu input {
+	width: 100%;
+    background-color: #c0c0c0;
+    border-bottom: 1px solid #33373d;
+    height: 2.4em;
+    line-height: 2em;
+    text-indent: 1em; 
+    text-align: left;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    color: #0f0f0f;
+    text-shadow: 0px 1px 0px rgba(0,0,0,.5);
+}
+
+
+
+.menu input:hover {
+    background-color: #f0f0f0;
+    font-weight: 600;
+    cursor:pointer; cursor: hand;
+}
+
+
+.formulario {
+    margin: 0px auto;
+    width: 420px;
+    text-align: center;
+    border: 1px solid black;
+}
+
+.formulario input {
+    margin-left: 10px;
+    margin-bottom: 10px;
+    text-align: left;
+    margin-right: 80px;
+}
+
+.formulario span {
+    width: 150px;
+    text-align: right;
+    float: left;
+}
+
+.formulario span.titulo_formulario {
+    width: 420px;
+    text-align: left;
+    background: #A0A0A0;
+    font-weight: 700;
+    padding: 4px 0px;
+    margin-bottom: 40px;        
+}
+
+.formulario input[type='submit'] {
+    margin-right: 10px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.error {
+    color: #FE2E2E;
+    font-weight: 700;
+    text-align: center;
+}
+
+.centrado {
+    text-align: center;
+}
+
+
+td, th {
+    border: 1px solid black;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+table {
+    margin: 0 auto 0 auto;
+    border-spacing: 15px;
+    border-right: 35px none;
+    border-collapse: collapse;
+}
+

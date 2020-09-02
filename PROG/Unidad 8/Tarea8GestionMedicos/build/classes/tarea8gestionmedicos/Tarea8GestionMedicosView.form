@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.5" maxVersion="1.9">
+  <NonVisualComponents>
+    <Container class="javax.swing.JPanel" name="mainPanel">
+      <Properties>
+        <Property name="name" type="java.lang.String" value="mainPanel" noResource="true"/>
+      </Properties>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" alignment="0" attributes="0">
+                                  <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
+                                  <Component id="lbl_medico" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <EmptySpace min="-2" pref="97" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="1" attributes="0">
+                                          <Group type="102" alignment="1" attributes="0">
+                                              <Component id="lbl_nombre" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                                              <Component id="txt_nombre" min="-2" pref="119" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Group type="102" alignment="1" attributes="0">
+                                              <Component id="lbl_nif" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                                              <Component id="txt_nif" min="-2" pref="119" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Group type="102" alignment="1" attributes="0">
+                                              <Component id="lbl_nif2" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                                              <Component id="txt_apellidos" min="-2" pref="119" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Group type="102" alignment="1" attributes="0">
+                                              <Component id="lbl_nif3" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                                              <Component id="txt_especialidad" min="-2" pref="119" max="-2" attributes="0"/>
+                                          </Group>
+                                      </Group>
+                                      <EmptySpace max="32767" attributes="0"/>
+                                      <Component id="btn_nuevo" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
+                                      <Component id="sep_top" min="-2" pref="425" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                          </Group>
+                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="1" attributes="0">
+                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="sep_bot" alignment="0" min="-2" pref="425" max="-2" attributes="0"/>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Component id="jScrollPane1" min="-2" pref="325" max="-2" attributes="0"/>
+                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                  <Component id="btn_mostrar" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                      </Group>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
+                  <Component id="lbl_medico" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="sep_top" min="-2" pref="10" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="txt_nif" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="lbl_nif" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
+                          <Component id="btn_nuevo" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="txt_nombre" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="lbl_nombre" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="txt_apellidos" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="lbl_nif2" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="txt_especialidad" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="lbl_nif3" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <Component id="sep_bot" min="-2" pref="10" max="-2" attributes="0"/>
+                  <EmptySpace max="32767" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="jScrollPane1" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="btn_mostrar" alignment="0" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JLabel" name="lbl_medico">
+          <Properties>
+            <Property name="font" type="java.awt.Font" resourceKey="lblMedico.font"/>
+            <Property name="foreground" type="java.awt.Color" resourceKey="lblMedico.foreground"/>
+            <Property name="text" type="java.lang.String" resourceKey="lblMedico.text"/>
+            <Property name="toolTipText" type="java.lang.String" resourceKey="lblMedico.toolTipText"/>
+            <Property name="name" type="java.lang.String" value="lblMedico" noResource="true"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JSeparator" name="sep_top">
+          <Properties>
+            <Property name="background" type="java.awt.Color" resourceKey="sep_top.background"/>
+            <Property name="foreground" type="java.awt.Color" resourceKey="sep_top.foreground"/>
+            <Property name="name" type="java.lang.String" value="sep_top" noResource="true"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="txt_nif">
+          <Properties>
+            <Property name="name" type="java.lang.String" value="txt_nif" noResource="true"/>
+            <Property name="nextFocusableComponent" type="java.awt.Component" editor="org.netbeans.modules.form.ComponentChooserEditor">
+              <ComponentRef name="txt_nombre"/>
+            </Property>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="lbl_nif">
+          <Properties>
+            <Property name="font" type="java.awt.Font" resourceKey="lbl_nif.font"/>
+            <Property name="foreground" type="java.awt.Color" resourceKey="lbl_nif.foreground"/>
+            <Property name="text" type="java.lang.String" resourceKey="lbl_nif.text"/>
+            <Property name="toolTipText" type="java.lang.String" resourceKey="lbl_nif.toolTipText"/>
+            <Property name="name" type="java.lang.String" value="lbl_nif" noResource="true"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="txt_nombre">
+          <Properties>
+            <Property name="name" type="java.lang.String" value="txt_nombre" noResource="true"/>
+            <Property name="nextFocusableComponent" type="java.awt.Component" editor="org.netbeans.modules.form.ComponentChooserEditor">
+              <ComponentRef name="txt_apellidos"/>
+            </Property>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="lbl_nombre">
+          <Properties>
+            <Property name="font" type="java.awt.Font" resourceKey="lbl_nombre.font"/>
+            <Property name="foreground" type="java.awt.Color" resourceKey="lbl_nombre.foreground"/>
+            <Property name="text" type="java.lang.String" resourceKey="lbl_nombre.text"/>
+            <Property name="toolTipText" type="java.lang.String" resourceKey="lbl_nombre.toolTipText"/>
+            <Property name="name" type="java.lang.String" value="lbl_nombre" noResource="true"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="txt_apellidos">
+          <Properties>
+            <Property name="name" type="java.lang.String" value="txt_apellidos" noResource="true"/>
+            <Property name="nextFocusableComponent" type="java.awt.Component" editor="org.netbeans.modules.form.ComponentChooserEditor">
+              <ComponentRef name="txt_especialidad"/>
+            </Property>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txt_apellidosActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JLabel" name="lbl_nif2">
+          <Properties>
+            <Property name="font" type="java.awt.Font" resourceKey="lbl_nif2.font"/>
+            <Property name="foreground" type="java.awt.Color" resourceKey="lbl_nif2.foreground"/>
+            <Property name="text" type="java.lang.String" resourceKey="lbl_nif2.text"/>
+            <Property name="toolTipText" type="java.lang.String" resourceKey="lbl_nif2.toolTipText"/>
+            <Property name="name" type="java.lang.String" value="lbl_nif2" noResource="true"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="txt_especialidad">
+          <Properties>
+            <Property name="name" type="java.lang.String" value="txt_especialidad" noResource="true"/>
+            <Property name="nextFocusableComponent" type="java.awt.Component" editor="org.netbeans.modules.form.ComponentChooserEditor">
+              <ComponentRef name="btn_nuevo"/>
+            </Property>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="lbl_nif3">
+          <Properties>
+            <Property name="font" type="java.awt.Font" resourceKey="lbl_nif3.font"/>
+            <Property name="foreground" type="java.awt.Color" resourceKey="lbl_nif3.foreground"/>
+            <Property name="text" type="java.lang.String" resourceKey="lbl_nif3.text"/>
+            <Property name="toolTipText" type="java.lang.String" resourceKey="lbl_nif3.toolTipText"/>
+            <Property name="name" type="java.lang.String" value="lbl_nif3" noResource="true"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="btn_nuevo">
+          <Properties>
+            <Property name="font" type="java.awt.Font" resourceKey="btn_nuevo.font"/>
+            <Property name="text" type="java.lang.String" resourceKey="btn_nuevo.text"/>
+            <Property name="name" type="java.lang.String" value="btn_nuevo" noResource="true"/>
+            <Property name="nextFocusableComponent" type="java.awt.Component" editor="org.netbeans.modules.form.ComponentChooserEditor">
+              <ComponentRef name="txta_show"/>
+            </Property>
+          </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btn_nuevoMouseClicked"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JSeparator" name="sep_bot">
+          <Properties>
+            <Property name="background" type="java.awt.Color" resourceKey="sep_bot.background"/>
+            <Property name="foreground" type="java.awt.Color" resourceKey="sep_bot.foreground"/>
+            <Property name="name" type="java.lang.String" value="sep_bot" noResource="true"/>
+          </Properties>
+        </Component>
+        <Container class="javax.swing.JScrollPane" name="jScrollPane1">
+          <Properties>
+            <Property name="name" type="java.lang.String" value="jScrollPane1" noResource="true"/>
+          </Properties>
+          <AuxValues>
+            <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+          </AuxValues>
+
+          <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+          <SubComponents>
+            <Component class="javax.swing.JTextArea" name="txta_show">
+              <Properties>
+                <Property name="columns" type="int" value="20"/>
+                <Property name="rows" type="int" value="5"/>
+                <Property name="name" type="java.lang.String" value="txta_show" noResource="true"/>
+                <Property name="nextFocusableComponent" type="java.awt.Component" editor="org.netbeans.modules.form.ComponentChooserEditor">
+                  <ComponentRef name="btn_mostrar"/>
+                </Property>
+              </Properties>
+            </Component>
+          </SubComponents>
+        </Container>
+        <Component class="javax.swing.JButton" name="btn_mostrar">
+          <Properties>
+            <Property name="font" type="java.awt.Font" resourceKey="btn_mostrar.font"/>
+            <Property name="text" type="java.lang.String" resourceKey="btn_mostrar.text"/>
+            <Property name="name" type="java.lang.String" value="btn_mostrar" noResource="true"/>
+            <Property name="nextFocusableComponent" type="java.awt.Component" editor="org.netbeans.modules.form.ComponentChooserEditor">
+              <ComponentRef name="txt_nif"/>
+            </Property>
+          </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btn_mostrarMouseClicked"/>
+          </Events>
+        </Component>
+      </SubComponents>
+    </Container>
+  </NonVisualComponents>
+  <Properties>
+    <Property name="component" type="javax.swing.JComponent" editor="org.netbeans.modules.form.ComponentChooserEditor">
+      <ComponentRef name="mainPanel"/>
+    </Property>
+    <Property name="menuBar" type="javax.swing.JMenuBar" editor="org.netbeans.modules.form.ComponentChooserEditor">
+      <ComponentRef name="default"/>
+    </Property>
+    <Property name="statusBar" type="javax.swing.JComponent" editor="org.netbeans.modules.form.ComponentChooserEditor">
+      <ComponentRef name="default"/>
+    </Property>
+  </Properties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="2"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+    <AuxValue name="designerSize" type="java.awt.Dimension" value="-84,-19,0,5,115,114,0,18,106,97,118,97,46,97,119,116,46,68,105,109,101,110,115,105,111,110,65,-114,-39,-41,-84,95,68,20,2,0,2,73,0,6,104,101,105,103,104,116,73,0,5,119,105,100,116,104,120,112,0,0,1,55,0,0,1,-53"/>
+  </AuxValues>
+</Form>

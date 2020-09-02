@@ -1,0 +1,66 @@
+package fichero;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.io.StreamTokenizer;
+public class Ficheros {
+	/*
+	 * Clase Ficheros con la función contarPalabrasyNumeros
+	 * and open the template in the editor.
+	 */
+
+	  public void contarPalabrasyNumeros(String nombre_fichero) {
+
+	        StreamTokenizer sTokenizer = null;
+	        int contapal = 0, numNumeros = 0;
+
+	        try {
+
+	            sTokenizer = new StreamTokenizer(new FileReader(nombre_fichero));
+
+	            while (sTokenizer.nextToken() != StreamTokenizer.TT_EOF) {
+
+	                if (sTokenizer.ttype == StreamTokenizer.TT_WORD)
+	                    contapal++;
+	                else if (sTokenizer.ttype == StreamTokenizer.TT_NUMBER)
+	                    numNumeros++;
+	            }
+
+	            System.out.println("Número de palabras en el fichero: " + contapal);
+	            System.out.println("Número de números en el fichero: " + numNumeros);
+
+	        } catch (FileNotFoundException ex) {
+	           System.out.println(ex.getMessage()) ;
+	        } catch (IOException ex) {
+	           System.out.println(ex.getMessage()) ;
+	        }
+	    }
+
+	    /**
+	     * @param args the command line arguments
+	     */
+	    
+	}
+
+
+package ficheros;
+
+public class Main {
+
+	/**
+	 * @param args
+	*/
+	// Clase Main desde donde se crea una instancia de la clase Ficheros y se llama a la función contarPalabrasyNumeros("datos.txt")
+	// pasándole como parámetro el nombre del fichero donde tiene que contar las palabras y los números
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//Los archivos de datos se colocan en la carpeta del proyecto 
+ new Ficheros().contarPalabrasyNumeros("datos.txt");
+	}
+
+}
+
+
+ //Contenido del fichero datos.txt (introducir estos datos desde el notepad,este fichero deberá colocarse en la carpeta del proyecto.)
+2 resultado 3 5 345 
+casa

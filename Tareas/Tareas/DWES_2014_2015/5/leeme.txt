@@ -1,0 +1,65 @@
+Tarea 5 DWES
+=============
+
+Estructura de carpetas:
+
+-----
+	|
+	clases - Contiene las clases creadas para la aplicación
+	|	|
+	|	modelo.php 		Implementa la clase abstracta Modelo en la que se definen los 
+	|	|				métodos para el acceso a las tablas de la base de datos cuya
+	|	|				configuración se realiza en el archivo \config_db.php
+	|	|
+	|	usuario.php 	Implementa la clase Ususario que extiende la clase Modelo
+	|					para el acceso a la tabla usuarios de la base de datos.
+	|
+	smarty
+	|	|
+	|	lib				Contiene los archivos de la libreria de Smarty
+	|	|
+	|	tpl--			Contiene los directorios a ser utilizados por Smarty
+	|		|
+	|		cache		Directorio donde los caches del template son almacenados
+	|		|
+	|		configs		Directorio usado para almacenar archivos de configuración 
+	|		|			usados en los templates
+	|		|
+	|		templates 	Directorio que contiene las plantillas correspondientes a las
+	|		|	|		vistas de la aplicación.
+	|		|	|
+	|		|	aplicacion.tpl
+	|		|	cabecera.tpl
+	|		|	confirmar_del.tpl
+	|		|	confirmar_des.tpl
+	|		|	index.tpl
+	|		|	msg.tpl
+	|		|	pie,tpl
+	|		|
+	|		templates_c	Directorio donde están localizados los templates compilados.
+	|
+	aplicacion.php			Contiene el código para llamar y controlar las respuestas
+	|						de la vista de la página a la que solo acceden los usuario
+	|						autenticados.
+	|
+	config_db.php			Archivo en el que se definen los datos de configuración
+	|						para el acceso a la base de datos.
+	|
+	define_variables.php	Archivo con el código para la declaración de variables y
+	|						asignación con los valores de la información pasada por POST
+	|	
+	desconectar.php			Archivo que es invocado cuando un usuario autenticado pulsa
+	|						el botón de desconectar.
+	|
+	estilos.css 			Código CSS para dar estilo a las vistas.
+	|
+	|
+	funciones.inc 			Contiene el código de las funciones implementadas para la aplicación.
+	|
+	|
+	index.php				Contiene el código para llamar y controlar las respuestas
+	|						de la vista de la página de inicio de la aplicación.
+	|
+	leeme.txt				Este archivo.
+					
+

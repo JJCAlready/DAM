@@ -1,0 +1,21 @@
+Para la implementación de la tarea se han realizado las siguientes modificaciones:
+
+	
+	Archivo repartos.php
+	====================
+		Se han modificado las lineas 31 a 34 para adaptarlas según el punto 1 de la tarea
+
+		Se han modificado e insertado las lineas que se han comentado con el estilo:
+			
+			///////////////////////////////////////////
+			//
+			//
+			///////////////////////////////////////////
+
+		para la obtener las nuevas funcionalidades según los requisitos del punto 2 de la tarea
+
+		
+		
+	Archivo ajaxmaps.php
+	====================
+		Se ha modificado la función obtenerCoordenadas() para recuperar la altitud según el requisito del punto 2 de la tarea

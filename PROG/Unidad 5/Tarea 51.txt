@@ -1,0 +1,13 @@
+Alumno: Jorge custodio Calle
+
+Ejercicio 1:
+Para este ejercicio compilo un pattern alfanumérico y mediante un do-while, solicito usuario hasta que cumple con los requisitos.
+
+Ejercicio 2:
+Lo mismo que el anterior, variando el pattern, y comprobando que no contenga el nombre.
+
+Ejercicio 3:
+Utilizo un ArrayList para almacenar los datos.
+
+Ejercicio 4:
+Un menú con un do-while, para las opciones.

@@ -1,0 +1,45 @@
+La aplicación se ha implementado como una sola página, en la que se presentarán o no
+los diferentes elementos de interacción con el usuario, dependiendo de la acción que 
+el usuario haya seleccionado.
+
+Cada uno de los elementos que pueden ser mostrados se ha implementado en un fichero nombre_del_elemento.php, de modo que cuando se desea mostrar dicho elemento se realiza
+el include del fichero.
+
+De este modo, además de este fichero leeme.txt, tenemos los siguientes:
+
+	- index.php
+		Contiene el código correspondiente a la página que se presentará, y desde el
+		que se incluyen el resto de archivos cuando son necesarios.
+
+	- cabecera.html
+		Contiene el código de la cabecera de la página.
+
+	- menu.php
+		Contiene el código necesario para presentar el menú de la aplicación.
+
+	- listado.php
+		Contiene el código necesario para presentar el listado del carro de la compra.
+
+	- form_compra.php
+		Contiene el código necesario para presentar el formulario de introducción de 
+		datos referentes a un item de compra.
+
+	- form_confirmar_borrado.php
+		Contiene el código necesario para presentar el formulario de confirmación
+		de borrado presentando los datos referentes al item de compra borrado.
+
+	- error.php
+		Contiene el código necesario para presentar el formulario de presentación
+		de errores.
+
+	- declaraciones.php
+		Contiene la declaración de variables y definición de constantes globales.
+
+	- funciones.php
+		Contiene las funciones implementadas.
+
+	- estilos.css
+		Contiene los estilos CSS para dar el formato correcto a los elementos html.
+
+Por simplicidad, tratándose de una aplicación sencilla, todos los ficheros se
+encuentran en el mismo directorio.

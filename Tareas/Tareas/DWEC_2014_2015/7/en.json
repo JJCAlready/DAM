@@ -1,0 +1,18 @@
+{
+	"localidad"       :"City: ",
+	"introLoc"        :"Enter a village of Spain",
+	"tiempoActual"    :"Current weather",
+	"tiempoManyana"   :"Tomorrow weather",
+	"noEncontrada"    :"Location not found",
+	"previsionManyana":"Forecast for tomorrow: ",
+	"humedad"         :"Humidity: ",
+	"viento"          :"Wind: ",
+	"nubosidad"       :"Cloudiness: ",
+	"lluvia"          :"Rain: ",
+	"si"              :"Yes",
+	"no"              :"No ",
+	"noDatos"         :"Data not available, try again",
+	"tempMax"         :"Maximum temperature: ",
+	"tempMin"         :"Low temperature: ",
+	"cubierto"        :" % covered"
+}

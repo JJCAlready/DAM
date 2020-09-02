@@ -1,0 +1,11 @@
+FileInputStream fichero;
+try {
+     // Elegimos fichero para leer flujos de bytes "crudos"
+ fichero = new FileInputStream("c:\\texto.txt");
+     // InputStreamReader sirve de puente de flujos de byte a caracteres
+ InputStreamReader unReader = new InputStreamReader(fichero);
+     // Vemos la codificación actual
+ System.out.println(unReader.getEncoding());
+} catch (FileNotFoundException ex) {
+   Logger.getLogger(textos.class.getName()).log(Level.SEVERE, null, ex);
+}

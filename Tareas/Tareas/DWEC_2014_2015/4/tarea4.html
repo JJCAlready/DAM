@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tarea 4 - DWEC</title>
+        <meta charset="UTF-8">
+        <script type="text/javascript" src="tarea4.js"></script>        
+        <link rel="stylesheet" href="estilos.css">   
+    </head>
+    <body>
+        <header>
+            <h1>Tarea 4 - DWEC</h1>
+            <h4>Fernando Arnedo Ayensa</h4>
+        </header>
+        <div id='resultado'>
+            <script type="text/javascript">
+                // Visualización de resultados del ejercicio 1
+                document.write("<br><b>Ejercicio 1</b>: ");
+                // creamos el array y lo rellenamos. 
+                var arrayPrimos = llenarArrayPrimos();
+                document.write("<br>Array de los primeros 15 primos en orden original: ");
+                visualizarArray(arrayPrimos);
+                var arrayPrimosInvertido = invertirArray(arrayPrimos);
+                document.write("<br>Array de los primeros 15 primos en orden invertido: ");
+                visualizarArray(arrayPrimosInvertido);
+                 
+                // Visualización de resultados del ejercicio 2
+                document.write("<br><br><br><b>Ejercicio 2</b>: ");
+                var identidad = new Identidad;
+                document.write("<br>La letra correspondiente al DNI 01012349 es "+ identidad.GenerarLetra("01012349"));
+                document.write("<br>¿El DNI 01012349G es correcto? : " + identidad.comprobarDNI("01012349G"));
+                document.write("<br>¿El DNI 01012349F es correcto? : " + identidad.comprobarDNI("01012349F"));
+
+                // Visualización de resultados del ejercicio 2
+                document.write("<br><br><br><b>Ejercicio 3</b>: ");
+                // Con varios diputados haremos un array llamado arrayParlamento.
+                var arrayParlamento = Array();
+                // introducimos los elementos
+                arrayParlamento[0] = new Diputado("Herminio","Cabezas","01012349G",30,"Verde");
+                arrayParlamento[1] = new Diputado("Manolo","López","10112349P",20,"Azul");
+                arrayParlamento[2] = new Diputado("Jacobo","Sánchez","11012349H",53,"Amarillo");
+                // mostramos el array desordenado
+                document.write("<br>arrayParlamento desordenado:");
+                for(var diputado of arrayParlamento) {
+                    document.write("<br>");
+                    diputado.toString();
+                }
+                // ordenamos el array por edad, de menor a mayor
+                arrayParlamento.sort(function(a,b) {return (a.getEdad()-b.getEdad())});
+                // mostramos el array ordenado 
+                document.write("<br><br>arrayParlamento ordenado:");
+                for(var diputado of arrayParlamento) {
+                    document.write("<br>");
+                    diputado.toString();
+                }
+            </script>
+        </div>
+    </body>
+</html>

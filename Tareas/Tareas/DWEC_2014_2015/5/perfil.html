@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Tarea 5 - DWEC</title>
+        <meta charset="UTF-8">
+        <script type="text/javascript" src="perfil.js"></script>
+        <link rel="stylesheet" href="estilos.css">   
+    </head>
+    <body>
+        <header>
+            <h1>Tarea 5 - DWEC</h1>
+            <h4>Fernando Arnedo Ayensa</h4>
+        </header>
+        <div class='contenedor_formulario'>
+            <div class='formulario'>
+                <form id='formulario'>  
+                    <span class='titulo_formulario'>Perfil del administrador</span>                
+                    <br>         
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre"/>
+                    <br>
+                    <label for="apellidos">Apellidos:</label>
+                    <input type="text" id="apellidos" name="apellidos"/>
+                    <br>
+                    <label for="password1">Contraseña:</label>
+                    <input type="password" id="password1" name="password1"/>
+                    <br>
+                    <label for="password2">Verificar contraseña:</label>
+                    <input type="password" id="password2" name="password2"/>
+                    <br>
+                    <label for="fecha_nac">Fecha nacimiento:</label>
+                    <input type="text" id="fecha_nac" name="fecha_nac"/>  
+                  
+                    <div class='botonera'>
+                        <input type="submit" id="enviar" name="enviar" value="Enviar" />
+                        <input type="reset" id="reset" name="reset" value="Reiniciar" />
+                    </div>
+
+                    <div id='errores' class='error'>
+                    </div>
+                </form>                
+                        
+            </div> 
+        </div> 
+    </body>
+</html>

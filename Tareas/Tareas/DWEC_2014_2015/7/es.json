@@ -1,0 +1,18 @@
+{
+	"localidad"       :"Localidad: ",	
+	"introLoc"        :"Introduzca una localidad de España",
+	"tiempoActual"    :"Tiempo actual",
+	"tiempoManyana"   :"Tiempo mañana",
+	"noEncontrada"    :"Localidad no encontrada",
+	"previsionManyana":"Previsión para mañana:",
+	"humedad"         :"Humedad: ",
+	"viento"          :"Viento: ",
+	"nubosidad"       :"Nubosidad: ",
+	"lluvia"          :"Luvia: ",
+	"si"              :"Si",
+	"no"              :"No",
+	"noDatos"         :"Datos no disponibles, inténtelo de nuevo",
+	"tempMax"         :"Temperatura máxima: ",
+	"tempMin"         :"Temperatura mínima: ",
+	"cubierto"        :" % cubierto"
+}

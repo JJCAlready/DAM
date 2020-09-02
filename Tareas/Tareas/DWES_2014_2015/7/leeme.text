@@ -1,0 +1,40 @@
+
+ La tarea ha sido implementada utilizando la librería jQuery4PHP para la generación del código javascript
+ encargado del manejo de eventos y la interacción sobre los diferentes elementos que se muestran u ocultan
+ al usuario.
+
+ Gran parte del código ha sido reutilizado de las tareas 3 y 5, concrétamente las funciones para la 
+ conversión de fechas, validación de campos, y la clase Modelo, creando la clase Comercial como una
+ extensión de la misma, a la que se han añadido funcionalidades propias.
+
+ Para las acciones a realizar tras recibir la respuesta a la llamada ajax, así como para rellenar el 
+ formulario con los datos del comercial seleccionado, se ha utilizado código propio de la librería 
+ jQuery.js (aunque bien podría haberse utilizado exclusivamente funciones del manejo  de DOM de javascript).
+ Dicho código ha sido incluido en el archivo include/js/tarea7_dwes.js
+
+ ESTRUCTURA DE CARPETAS:
+
+ \\ 
+    -- clases		 Contiene las clases implementadas para la aplicación (Modelo.php y Comercial.php)
+    |
+    -- include		 Contiene las librerias externas
+    |	 |
+    |    -- js		 Contiene las librerias de javascript (jquery-1.11.2.min.js y tarea7_dwes.js)
+    |    |
+    |    -- YepSua	 Contiene la libreria jQuery4PHP
+    |
+     -- resources	 Contiene los recursos utilizados para el diseño gráfico de la aplicación
+        |
+        -- css 		 Contiene los archivos css utilizados por la aplicación (estilos.css)
+        |
+        -- images	 Contiene las imágenes empleadas en la aplicación.
+
+
+ La carpeta raiz contiene el resto de archivos con el código php necesario para implementar la aplicación:
+
+ 	index.php 			Contiene el código html y php de la página principal y única que se muestra.
+ 	funciones.php 		Contiene el código php de las funciones implementadas.
+ 	config_db.php 		Contiene el código php para la configuración de la base de datos.
+ 	ajaxResponse.php 	Contiene el código php que es ejecutado en las llamadas ajax de la página index.php
+    leeme.txt           Este archivo
+   

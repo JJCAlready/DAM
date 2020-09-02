@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Jquery método ajax con JSON.</title>
+    <script src="jquery-1.11.2.min.js"></script>
+
+    <script>
+        
+        // Para que hagáis como ejercicio os dejo comprobar que no se ha dejado en blanco 
+        // Tambien os dejo lo de quitar los acentos. Aunque a mi me funciona sin problemas. 
+        $(function () {
+            $("#actual").click(function (evt) { // Se se pulsa el boton
+                var cadena = "";
+                var ciudad = normaliza($("#localidad").val());
+				$("#localidad").val(ciudad);
+				$("#cambia").css('color', 'black');
+				if(ciudad.length>0) {
+					var miurl = "http://api.openweathermap.org/data/2.5/weather?q=" + ciudad + ",es&units=metric";
+					$("#cambia").html("<img src='ajax-loader.gif'>"); // Mientras se carga mostrar una animación. Coged cualquier gif animado. 
+					console.log(miurl);
+					// El método ajax recibe un objeto literal
+					$.ajax({
+						url: miurl,
+						// data: { q: granada, }, // El post al servidor
+						type: "GET",
+						dataType: "json",
+						// Si se produce correctamente
+						success: function (datos_devueltos) {
+							$("#cambia").html("<br />");
+							$('#cambia').css('border', 'solid 2px black');
+							$('#cambia').height("40%");
+							$('#cambia').width("40%");
+
+
+							var llueve = "";
+							var temperatura = datos_devueltos.main.temp;
+							temperatura = temperatura.toPrecision(2); // La temperatura con menos decimales
+							$("#cambia").append("Temperatura: " + temperatura + "º<br />" + "<img src='http://openweathermap.org/img/w/" + datos_devueltos.weather[0].icon + ".png'><br />");
+							$("#cambia").append("Humedad: " + datos_devueltos.main.humidity + "%<br />" + "<br />Viento: " + datos_devueltos.wind.speed + "km/h <br />");
+							if (datos_devueltos.weather[0] == "rainy") llueve = "Si";
+							else llueve = "No";
+							$("#cambia").append("Lluvia: " + llueve + "<br />Nubes: " + datos_devueltos.clouds.all + " % cubierto <br />");
+
+
+						},
+						// Si la petición falla
+						error: function (xhr, estado, error_producido) {
+							$("#cambia").html("Se ha producido un error en la comunicación.");
+							console.log("Error producido: " + error_producido);
+							console.log("Estado: " + estado);
+						},
+						//Tanto si falla como si funciona como sino funciona.
+						complete: function (xhr, estado) {
+							console.log("Petición completa");
+						}
+
+					});
+				} else {
+					$("#cambia").html("<br />");
+					$('#cambia').css('border', 'solid 2px black');
+					$('#cambia').height("40%");
+					$('#cambia').width("40%");
+					$("#cambia").append("No ha introducido ninguna ciudad.");
+					$("#cambia").css('color', 'red');
+				}
+                evt.preventDefault();
+				
+
+            });
+			
+            $("#previsión").click(function (evt) { // Se se pulsa el boton
+                var cadena = "";
+                var ciudad = $("#localidad").val();
+				var ciudad = normaliza($("#localidad").val());
+				$("#localidad").val(ciudad);
+				$("#cambia").css('color', 'black');
+				if(ciudad.length>0) {
+            //    var miurl = "http://api.openweathermap.org/data/2.5/forecast/daily?q=" + ciudad + ",es&mode=json&units=metric&cnt=7";
+					var miurl = "http://api.openweathermap.org/data/2.5/forecast/daily";
+					$("#cambia").html("<img src='ajax-loader.gif'>"); // Mientras se carga
+					console.log(miurl);
+					// El método ajax recibe un objeto literal
+					$.ajax({
+						url: miurl,                                
+						data: {q:ciudad+",es", mode:"json", units:"metric", cnt:"7"}, // Para que veáis como se hace de la otra forma.
+						type: "GET",
+						dataType: "json",
+						// Si se produce correctamente
+						success: function (datos_devueltos) {
+							$("#cambia").html("<br />");
+							$('#cambia').css('border', 'solid 2px black');
+							$('#cambia').height("40%");
+							$('#cambia').width("40%");
+							var llueve = "";                        
+							var temperaturaminima = datos_devueltos.list[1].temp.min.toPrecision(2);
+							var temperaturamáxima = datos_devueltos.list[1].temp.max.toPrecision(2);
+							
+							$("#cambia").append("Temperatura Mínima:" + temperaturaminima
+												+ "º<br />" +"Temperatura Máxima:" + temperaturamáxima +"º <br /> <img src='http://openweathermap.org/img/w/" + datos_devueltos.list[1].weather[0].icon + ".png'><br />");
+					
+
+
+						},
+						// Si la petición falla
+						error: function (xhr, estado, error_producido) {
+							console.log("Error producido: " + error_producido);
+							console.log("Estado: " + estado);
+							$("#cambia").html("Se ha producido un error en la comunicación.");
+
+						},
+						//Tanto si falla como si funciona como sino funciona.
+						complete: function (xhr, estado) {
+							console.log("Petición completa");
+						}
+
+					});
+				} else {
+					$("#cambia").html("<br />");
+					$('#cambia').css('border', 'solid 2px black');
+					$('#cambia').height("40%");
+					$('#cambia').width("40%");
+					$("#cambia").append("No ha introducido ninguna ciudad.");
+					$("#cambia").css('color', 'red');		
+				}
+                evt.preventDefault();
+
+            });
+
+        });
+
+		function normaliza(str) {
+			//var str2=str;
+			var de  = "ÃÀÁÄÂÈÉËÊÌÍÏÎÒÓÖÔÙÚÜÛãàáäâèéëêìíïîòóöôùúüûÑñÇç", 
+                a   = "AAAAAEEEEIIIIOOOOUUUUaaaaaeeeeiiiioooouuuunncc";
+			for(i=0, j=de.length; i<j; i++) {
+				str = str.replace(de.substr(i, 1), a.substr(i, 1));	
+				console.log('reemplazando '+ de.substr(i, 1) + " por " + a.substr(i, 1));
+			}
+			return str;
+		}
+    </script>
+</head>
+
+<body>
+
+    <form id="formtiempo">
+        <label>Localidad</label>
+        <input type="text" id="localidad"></input>
+        <br>
+        <button id="actual"> Tiempo Actual </button>
+        <button id="previsión"> Tiempo Mañana </button>
+        
+    
+    </form>
+    <div id="cambia">
+        <h2>Cambia el contenido</h2>
+    </div>
+</body>
+
+</html>

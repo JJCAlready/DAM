@@ -1,0 +1,15 @@
+body {
+	background: #f0f0f0;
+}
+header, footer {
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+footer {
+	padding-top: 20px;
+}
+
+li>p {
+	color: #000000;
+	font-weight: 700;

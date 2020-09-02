@@ -1,0 +1,18 @@
+{
+"localidad"       :"Ville: ",
+"introLoc"        :"Entrez une ville espagnole",
+"tiempoActual"    :"Temps actuel",
+"tiempoManyana"   :"Temps demain",
+"noEncontrada"    :"Ville introuvable",
+"previsionManyana":"Prévisions pour demain:",
+"humedad"         :"Humidité: ",
+"viento"          :"Vent: ",
+"nubosidad"       :"Nuages: ",
+"lluvia"          :"Pluie: ",
+"si"              :"Oui",
+"no"              :"Non",
+"noDatos"         :"Pas de données non disponibles, essayer à nouveau",
+"tempMax"         :"Température maximale: ",
+"tempMin"         :"Température minimale: ",
+"cubierto"        :" % couvert"
+}

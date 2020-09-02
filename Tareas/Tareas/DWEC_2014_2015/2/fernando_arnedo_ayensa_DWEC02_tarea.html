@@ -1,0 +1,90 @@
+<!--
+Realizar una pequeña aplicación en JavaScript que muestre lo siguiente:
+
+1. Cree que dos variables numéricas y asígneles un valor entero. Realice 
+   un código que compruebe cual es el mayor. 
+2. Números múltiplos de  5 desde el número 1 al número 100 incluido.
+3. Los 10 primeros números múltiplos de 3 y de 2.
+4. Preguntar por dos número y realizar una suma con ellos. Los números 
+   pueden tener decimales. Pida los números con prompt. 
+5. 80 / 4 = 
+6. 120 * 16 = 
+
+
+Observaciones:
+	En la página web deben mostrarse las soluciones (con document.write). 
+	El segundo y el tercero deben realizarse con bucles distintos.
+	Los apartados 5 y 6 se realizarán empleando operadores de desplazamiento
+	de bits, sabiendo que cuando desplazamos 1 bit a la derecha dividimos un
+	entero por 2 y cuando lo desplazamos a la izquierda estamos multiplicando 
+	por 2.
+-->
+
+<!DOCTYPE html>
+ 
+<html lang="es">
+ 
+<head>
+
+</head>
+<title>Tarea 2 de Desarrollo Web en Entorno Cliente</title>
+<meta charset="utf-8" />
+<script type="text/javascript" src="tarea2.js"></script>
+<link rel="stylesheet" href="estilos.css" /> 
+<body>
+    <header>
+       <h1>Tarea 2 de DWEC</h1>
+    </header>
+    <section>
+    	<ol> 
+			<li>
+				<p>Cree que dos variables numéricas y asígneles un valor entero. Realice 
+   					un código que compruebe cual es el mayor.</p>
+				<script type="text/javascript">
+					document.write(ejercicio1());
+				</script>
+			</li> 
+			
+			<li>
+				<p>Números múltiplos de 5 desde el número 1 al número 100 incluido.</p>
+				<script type="text/javascript">
+					document.write(ejercicio2());
+				</script>	
+			</li> 
+
+			<li>
+				<p>Los 10 primeros números múltiplos de 3 y de 2.</p>
+				<script type="text/javascript">
+					document.write(ejercicio3());
+				</script>	
+			</li>
+
+			<li>
+				<p>Preguntar por dos número y realizar una suma con ellos.  Los números 
+                   pueden tener decimales. Pide los números con prompt. </p>
+				<script type="text/javascript">
+					document.write(ejercicio4());
+				</script>
+			</li>
+
+			<li>
+				<p>80 / 4 = </p>
+				<script type="text/javascript">
+					document.write(ejercicio5());
+				</script>
+			</li>
+
+			<li>
+				<p>120 * 16 =</p>
+				<script type="text/javascript">
+					document.write(ejercicio6());
+				</script>
+			</li>
+		</ol>  
+    </section>
+    <footer>
+        Fernando Arnedo Ayensa - Octubre 2014
+    </footer>
+</body>
+</html>
+

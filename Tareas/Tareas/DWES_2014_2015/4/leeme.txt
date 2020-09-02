@@ -1,0 +1,34 @@
+Para el desarrollo de la tarea, además de las páginas solicitadas, se han 
+implementado las siguientes páginas:
+
+  * desconectar.php, para confirmar la desconexión de la aplicación, 
+    que muestra un formulario con las opciones de confirmar la desconexión
+    y de cancelar. En el caso de que se cancele la desconexión la página 
+    redirige a la página desde la que se invocó la desconexión. En el caso
+    de confirmarse la desconexión la página redirige a la página de inicio
+    tras borrar todos los datos de la sesión.
+
+  * tarea4_cookies.php, para verificar que el navegador estáconfigurado para
+    aceptar cookies, mostrando un aviso al usuario en el caso de que no lo esté.
+
+  * cabecera.php, que se incluye en todas las páginas que se muestran al usuario
+    y que muestra el logo de la aplicación y los datos de conexión en el caso de
+    que se haya autentificado u usuario, o se acceda a la página de información
+    como invitado.
+
+La página de inicio, tal y como se pide en el enunciado de la tarea, muestra
+un formulario de conexión, así como otro para entrar como invitado. No 
+obstante, al ir a la página de inicio desde la página de información, si se 
+había accedido a esta como usuario autentificado, se ha optado por ocultar la
+opción de entrar como invitado, manteniendo la opción de autentificarse por si
+se desea hacerlo como un usuario diferente. 
+
+Para la página de preferencias se ha optado por utilizar un control html5
+de tipo color, aunque como este control no es reconocido por el explorador IE
+se solicita al usuario introducir el valor hexadecimal del color deseado en el
+formato #XXX o #XXXXXX.
+
+Todas las páginas, excepto la de inicio (index.php) solo son accesibles si el
+usuario se ha autenticado correctamente o, en el caso de la página de información,
+se accede como invitado. Si un usuario no autenticado trata de entrar en alguna
+de las páginas introducciendo su URL, será redirigido a la página de inicio.

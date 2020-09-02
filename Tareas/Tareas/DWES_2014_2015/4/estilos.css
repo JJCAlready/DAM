@@ -1,0 +1,255 @@
+* { 
+	margin: 0px;
+	padding: 0px; outline: 0;
+}
+
+html, body { 
+	width: 100%;
+}
+
+body { 
+	background: #FFFFFF;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+h1 {
+	font-size: 1.5em;
+}
+
+h4 {
+	font-size: 0.95em;
+}
+
+h1, h4 {
+    text-align: left;
+    margin-left: 20px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+caption {	
+	color: #555;
+	padding: 20px;
+}
+
+select {
+	width: 280px;
+}
+
+#datos_conexion { 
+	margin: 10px; 
+	border-bottom: 1px solid #808080;
+	-webkit-column-count: 4; /* Chrome, Safari, Opera */
+    -moz-column-count: 4; /* Firefox */
+    column-count: 4;
+}	
+
+#menu {  
+	text-align: center;
+	font-size: 0.7em;
+	width: 820px;
+	margin-left: 310px;
+    margin-top: -35px;
+    margin-bottom: 0px;
+}
+
+#menu ul { 
+	list-style-type: none;
+}
+
+#menu ul li.nivel1 { 
+	float: left;
+	width: 162px;
+	margin-right: 2px;
+}
+
+#menu ul li a {
+	display: block;
+	text-decoration: none;
+	color: #000;
+	background-color: #D6D6D6;
+	border-left: solid 1px #fff;
+	border-bottom: solid 1px #fff;
+	padding: 8px;
+	position: relative;
+}
+
+#menu ul li:hover {
+	position: relative;
+}
+
+#menu ul li a:hover, #menu ul li:hover a.nivel1 {
+	background-color: #C0C0C0;
+	color: #000;
+	font-weight: 600;
+	position: relative;
+}
+
+#menu ul li a.nivel1 {
+	display: block!important;
+	display: none;
+	position: relative;
+}
+
+#menu ul li ul {
+	display: none;
+}
+
+#menu ul li a:hover ul, #menu ul li:hover ul {
+	display: block;
+	position: absolute;
+	left: 0px;
+}
+
+#menu ul li ul li a {
+	width: 160px;
+	padding: 6px 0px 8px 0px;
+}
+
+#menu ul li ul li a:hover {
+	border-top-color: #000;
+	position: relative;
+}
+
+
+label {
+    width: 190px;
+    text-align: right;
+    float: left;
+}
+
+.contenedor_formulario,
+.contenido {
+    margin: 20px auto 0px auto;
+    width: 900px;
+    height: auto;
+}
+
+.contenido {
+    font-size: 0.8em;
+}
+
+ p.informacion {
+	margin: 0px;
+	padding: 5px 10px 25px 10px;
+}
+
+p.aviso {
+	margin: 0px;
+	padding: 5px 10px 25px 10px;
+}
+
+
+#form_desconectar input[type='submit'] {
+    text-align: center;
+    width: 110px;
+}
+
+.formulario {
+    margin: 0px auto;
+    width: 450px;
+    height: auto;
+    font-size: 0.9em;
+    text-align: center;
+    border: 1px solid black;
+    background-color: #f0f0f0;
+}
+
+.formulario_inf {
+    margin: 0px auto;
+    width: 450px;
+    height: auto;
+    font-size: 0.9em;
+    text-align: center;
+    border: 0px solid black;
+}
+
+
+.formulario input[type='text'],
+.formulario input[type='color'],
+.formulario input[type='password'] {
+    margin-left: 10px;
+    margin-bottom: 10px;
+    text-align: left;
+	float:left;
+}
+
+.formulario_inf input[type='submit'],
+.formulario input[type='submit'] {
+    margin: 10 10 20 10;
+    text-align: center;
+    width: 90px;
+}
+
+.formulario span {
+    width: 210px;
+    text-align: right;
+    float: left;
+}
+
+.formulario span.titulo_formulario {
+    width: 450px;
+    text-align: left;
+    background: #A0A0A0;
+    font-weight: 700;
+    padding: 4px 0px;
+    margin-bottom: 20px;        
+}
+
+.informacion, .aviso, .error {
+	font-weight: 700;
+    font-size: 0.7em;
+    text-align: left;
+    padding: 20px;
+}
+
+.error {
+    color: #FE2E2E;
+}
+
+.informacion {
+    color: #008040;
+}
+
+.aviso {
+	color: #D24400;
+}
+
+.centrado {
+    text-align: center;
+}
+
+.visible {
+    display: inline;
+}
+
+.oculto {
+    display: none;
+}
+
+.botonera {
+	width = 100%;
+	padding-top: 20px;
+}
+
+.contenido {
+	margin: 20px auto 0px auto;
+    width: 900px;
+    height: auto;
+}
+
+.contenido ul {
+display: block;
+list-style-type: disc;
+-webkit-margin-before: 1em;
+-webkit-margin-after: 1em;
+-webkit-margin-start: 0px;
+-webkit-margin-end: 0px;
+-webkit-padding-start: 40px;
+}
+
+.contenido ul li {
+display: list-item;
+text-align: -webkit-match-parent;
+margin-bottom: 1em;
+}

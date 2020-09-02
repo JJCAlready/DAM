@@ -1,0 +1,128 @@
+La aplicación se ha implementado como una sola página (index.php), en la que 
+se presentarán o no los diferentes elementos de interacción con el usuario,
+dependiendo de la acción que el usuario haya seleccionado, y que nos vendrá 
+dada por la variable global $_POST['accion']. Para mostrar un elemento, se 
+debe realizar según el ejemplo $mostrar['formulario'] = true sustituyendo 
+'formulario' por el elemento correspondiente, de modo que se muestre o no el
+código html mediante la sentencia:
+
+				foreach($mostrar as $elemento => $muestra) {
+					if ($muestra) {
+						include $elemento.".php";
+					}
+				}
+
+El menú ha sido implementado como listas html anidadas, en la que cada elemento
+del mismo es un elemento <li> que encierra un enlace a la página index.php con
+los parámetros 'operacion' y 'tabla' de manera que en la página index.php podamos
+saber si se ha seleccionado una opción del menú mediante la sentencias:			
+
+				foreach ($_GET as $variable => $valor) { 
+					$$variable = $valor;
+					$get=true;
+				}
+				...
+				
+				switch ($operacion_tabla) {
+				 ...
+				 }
+
+introducciendo el código necesario para responder a la combinación operacion_tabla
+en cada uno de los case del switch.
+El código html para el menú se encuentra en el archivo cabecera.html que es incluido
+en el fichero index.php. El aspecto de menú desplegable se obtiene mediante el código
+CSS para el id #menu.
+
+Cada uno de los controles que pueda desencadenar una acción tiene el atributo 
+name='accion'.
+Cada uno de los controles que se utiliza para mostrar o introducir información
+de o hacia la base de datos tiene los atributos name='nombreCampoBD' y 
+value='nombreCampoBD', donde nombreCampoBD es el nombre del campo dentro de 
+la tabla correspondiente en la base de datos. Esto nos permite recuperar los
+valores introducidos en un formulario mediante la sentencia:
+
+				foreach ($_POST as $variable => $valor) { 
+					$$variable = $valor;
+					$post=true;
+				}
+
+y responder a las selecciones del usuario con la sentencia :
+
+				switch ($accion_tabla) {
+				...
+				}
+
+introducciendo el código necesario para responder a la combinación accion_tabla
+en cada uno de los case del switch.
+
+Para las acciones en las que es necesario actuar contra la base de datos se han
+implementado las funciones:
+
+				dbConectar()
+				dbListarTabla($tabla, $titulo, $cabecera)
+				dbListarVentas($codComercial)
+				dbInsertar($tabla, $campos)
+				dbActualizar($tabla, $campos, $strWhere)
+				dbEliminar($tabla, $strWhere)
+				dbRecuperarRegistros($tabla, $strWhere)
+				dbVentasComercial($codigo)
+				dbVentasProducto($referencia)
+				dbExiste($tabla, $clave, $valor)
+				dbHtmlSelect($tabla, $campoValue, $campoMostrado, $name=null,
+				             $itemSeleccionado=null)
+
+debidamente documentadas en el archivo funciones.php
+
+Asimismo se han implementado las funciones:
+
+				formatFechaES($value)
+				formatFechaBD($value)	
+
+para adapatar las fechas al formato español o al formato requerido por la base de 
+datos.
+
+La función: 
+				validaCampo($valor, $validaciones)
+
+se ha implementado con el fín de validar cada uno de los campos según los 
+requerimientos de la base de datos.
+
+Las funciones:
+
+				validarComercial($campos, $disableClave, $codigoAnterior)
+				validarProducto($campos, $disableClave, $referenciaAnterior)
+				validarVenta($campos)
+				validarSelectVenta($campos)
+
+se han implementado con el fin de realizar la validación de los datos a insertar o
+a actualizar en la base de datos, de modo que devuelven el primer error de validación
+encontrado para cada uno de los campos. Solo se muestra un error de validación por 
+campo para no saturar de información excesiva los formularios de introducción de datos.
+
+En los listados de las tablas, cuando estas contienen claves ajenas, se ha mostrado
+junto a dichas claves los valores de los campos decriptivos de las mismas. Así, en el
+listado de la tabla ventas se han incluido junto al campo codComercial el nombre del
+comercial y junto al campo refProducto se han incluido el nombre y la descripción.
+
+Para la selección de un registro de la tabla comerciales, se ha optado por mostrar
+un select que muestra tanto el código como el nombre del comercial (se incluyen los
+dos, pues podría haber dos comerciales con diferentes códigos pero igual nombre).
+
+Para la selección de un registro de la tabla productos, se ha optado por mostrar
+un select que muestra tanto la referencia como el nombre y la descripción (se incluyen
+los dos, pues podría haber dos productos con diferentes referencia pero igual nombre y
+descripción).
+
+Para la selección de un registro de la tabla ventas, se ha optado por mostrar tres
+select encadenados, seleccionando en primer lugar el comercial, seguidamente el
+producto y finalmente la fecha.
+
+Para el borrado de productos y comerciales que se encuentren en la tabla ventas,
+se informa al usuario de que el borrado no puede llevarse a cabo por estar implicados
+en alguna venta, indicando que primeramente deben borrarse dichas ventas. De igual 
+manera se impide la modificación (informando de la razón) de las claves cuando se 
+procede a la modificación de productos y comerciales.
+
+Se utilizan los mismos interfaces para la inserción, modificación y eliminación de
+registros, desactivando el control o los controles necesarios que impidan la modificación
+de los mismos cuando así se requiera.

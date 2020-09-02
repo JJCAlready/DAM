@@ -1,0 +1,38 @@
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2015-03-13 10:57:00
+         compiled from ".\templates\aplicacion.tpl" */ ?>
+<?php /*%%SmartyHeaderCode:236125502b3f9576149-99664015%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+$_valid = $_smarty_tpl->decodeProperties(array (
+  'file_dependency' => 
+  array (
+    '3242cb00ec20e5a7fc0c239099372e771aa6bb57' => 
+    array (
+      0 => '.\\templates\\aplicacion.tpl',
+      1 => 1426240616,
+      2 => 'file',
+    ),
+  ),
+  'nocache_hash' => '236125502b3f9576149-99664015',
+  'function' => 
+  array (
+  ),
+  'version' => 'Smarty-3.1.21-dev',
+  'unifunc' => 'content_5502b3f95f0266_86473491',
+  'has_nocache_code' => false,
+),false); /*/%%SmartyHeaderCode%%*/?>
+<?php if ($_valid && !is_callable('content_5502b3f95f0266_86473491')) {function content_5502b3f95f0266_86473491($_smarty_tpl) {?><?php echo $_smarty_tpl->getSubTemplate ("cabecera.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0);?>
+
+<br><br><br><br>   
+<h1>Autor: Fernando Arnedo Ayensa</h1>
+<br><br><br><br>  
+<p>Acceso exclusivo a usuarios autenticados</p>	
+<div class='contenedor_formulario'>
+
+    <form action='index.php' method='post'> 
+        <div class='botonera'>
+            <input type="submit" style='width:180px' name="accion" value="Ir a página de inicio" />
+        </div>  
+    </form>          
+</div>
+<?php echo $_smarty_tpl->getSubTemplate ("pie.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0);?>
+
+<?php }} ?>

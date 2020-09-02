@@ -1,0 +1,23 @@
+Con el fin de separar la lógica de la presentación, se ha hecho uso de la librería de plantillas
+smarty, siguiendo la estructura de carpetas similar a la utilizada en la tarea 5.
+
+	smarty
+		|
+		lib				Contiene los archivos de la libreria de Smarty
+		|
+		tpl--			Contiene los directorios a ser utilizados por Smarty
+			|
+			cache		Directorio donde los caches del template son almacenados
+			|
+			configs		Directorio usado para almacenar archivos de configuración 
+			|			usados en los templates
+			|
+			templates 	Directorio que contiene las plantillas correspondientes a las
+						vistas de la aplicación.
+
+Se supone que la prueba y corrección de la tarea se llevará a cabo ejecutando los script 
+cliente.php y servidor.php en el mismo servidor, por lo que los valores de los parámetros
+location y uri que se pasan al constructor del servidor han sido calculados teniendo en
+cuenta esta suposición. No obstante dichos script han sido probados ejecutándose en 
+servidores separados (ajustando los valores de los parámetros tanto en el servidor
+como en el cliente).						

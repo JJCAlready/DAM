@@ -1,0 +1,62 @@
+body {
+	background: #f8f8f8;
+    margin: 0px;
+}
+header, footer {
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+h1, h3 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+input[type="submit"] {
+	width:76px;
+	padding: 0px;
+	margin: 20px 1px 20px 1px;
+	font-size: 0.55em;
+	font-weight: 700;
+}
+
+#tablero, #contenedor {
+    width: 488px;
+    margin: 0px auto 0px auto;
+}
+
+.centrado {
+   
+}
+
+.td {
+	height:120px;
+	width:120px;
+	border: 1px solid black;
+	text-align: center;
+	line-height: 120px;
+	font-size: 5em;
+	float: left;
+}
+
+.tr {
+	height:122px;
+	width:488px;
+	/*border: 0px solid black;*/
+}
+
+.table {
+	height:488px;
+	width:488px;
+	border: 1px solid black;
+}
+
+.blanco {
+	background-color: white;
+}
+
+.rojo {
+	background-color: red;
+}
+
+

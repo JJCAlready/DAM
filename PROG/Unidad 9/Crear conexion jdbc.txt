@@ -1,0 +1,13 @@
+// Establece la conexi�n
+Connection con = DriverManager.getConnection (
+"jdbc:odbc:miBD", "miLogin", "miPassword");
+
+// Ejecuta la consulta
+Statement stmt = con.createStatement();
+ResultSet rs = stmt.executeQuery("SELECT nombre, edad FROM Jugadores");
+
+// Procesa los resultados
+while (rs.next()) {
+String nombre = rs.getString("nombre");
+int edad = rs.getInt(�edad");
+}

@@ -1,0 +1,159 @@
+* {
+    margin: 0px;
+}
+body {
+	background: #eeeeee;
+}
+
+header, footer {
+	text-align: center;
+}
+
+h1, h3 {
+    margin: 0px;
+}
+
+
+#menu {  
+    text-align: center;
+    font-size: 1em;
+    width: 480px;
+    margin: 30px auto 0 auto;
+}
+
+#perfil { 
+    float: left;
+    width: 200px;
+    margin-right: 2px;
+}
+
+#preguntas { 
+    float: right;
+    width: 200px;
+    margin-right: 2px;
+}
+
+
+#menu ul li {
+    display: block;
+    text-decoration: none;
+    color: #000;
+    background-color: #D6D6D6;
+    border-left: solid 1px #fff;
+    border-bottom: solid 1px #fff;
+    padding: 8px;
+    position: relative;
+}
+
+#menu ul li:hover {
+    background-color: #C0C0C0;
+    color: #000;
+    font-weight: 600;
+    position: relative;
+    cursor: pointer;
+}
+
+#num_visitas {
+   clear:both;
+   text-align: center;
+   font-size: 1em;
+   width: 800px;
+   margin: 100px auto; 
+}
+
+#resultado {
+    width: 600px;
+    margin: 0 auto;
+}
+
+
+label {
+    width: 190px;
+    text-align: right;
+    float: left;
+}
+
+.contenedor_formulario {
+    margin: 40px auto 0px auto;
+    width: 900px;
+    height: auto;
+}
+
+.formulario {
+    margin: 0px auto;
+    width: 480px;
+    height: auto;
+    font-size: 0.9em;
+    text-align: center;
+    border: 1px solid black;
+}
+
+
+.formulario input[type='text'], 
+.formulario input[type='radio'], 
+.formulario select,
+.formulario textarea, 
+.formulario input[type='password'] {
+    margin-left: 10px;
+    margin-bottom: 10px;
+    text-align: left;
+    float:left;
+}
+
+.formulario input[type='submit'], 
+.formulario input[type='reset'] {
+    width: 80px;
+    margin-right: 10px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.formulario span {
+    width: 210px;
+    text-align: right;
+    float: left;
+}
+
+
+.formulario span.titulo_formulario {
+    width: 472px;
+    text-align: left;
+    background: #A0A0A0;
+    font-weight: 700;
+    padding: 4px 0px 4px 8px;
+    margin-bottom: 20px;        
+}
+
+
+.informacion, .aviso, .error {
+    font-weight: 700;
+    font-size: 0.7em;
+    text-align: left;
+    padding: 20px;
+}
+
+.error {
+    color: #FE2E2E;
+    font-size: 1em;
+    font-weight: normal;
+}
+
+
+
+.informacion {
+    color: #008040;
+}
+
+.aviso {
+    color: #D24400;
+}
+
+.centrado {
+    text-align: center;
+}
+
+.botonera {
+    clear: both;
+    width: 100%;
+    margin: 20px auto; 
+}
